@@ -1,0 +1,35 @@
+{
+  "candidate_id": "grok-task-materials-design-2-doc-1",
+  "status": "local_wording_revision_not_native_tested",
+  "release_version": null,
+  "one_skill_name": "solo-to-team-grok",
+  "file_reference_base": "explicit_task_materials_root_supplied_for_the_current_task",
+  "expected_body": {
+    "bytes": 13529,
+    "sha256": "33ecc365c534c20b65cbe131b89eab814749230f77a30096e80689a86346e8ba"
+  },
+  "files": {
+    "LICENSE": {
+      "bytes": 1075,
+      "sha256": "5d63ea4387f51228fe2f5d313203c401fad2121e2fbf60354234b92dd2559001"
+    },
+    "references/group-config.md": {
+      "bytes": 14171,
+      "sha256": "10ff9e623070de605e6068cc9fc6a9b6e8deb3eb6e5b5cb2b0ce784418423663"
+    },
+    "references/groups.zh.md": {
+      "bytes": 20456,
+      "sha256": "3f5c10e3d1edc6d71596557cf7ee326b7aa8572396f01b2c42ea890820cf9ce5"
+    },
+    "references/role-routing.md": {
+      "bytes": 9099,
+      "sha256": "0e6875f8189371aacc941fabf10c932f7081fb9bfb4bc4424629fedbe72b0462"
+    },
+    "references/roles.zh.md": {
+      "bytes": 27433,
+      "sha256": "f56a523c0e7438c17771ef34c0f31753e3deeaa60f5dddf0a9e7e6ca7d80134f"
+    }
+  },
+  "scope": "Complete 16 roles, 6 groups and 26 suggested memberships; no automatic agents, permissions, mount or visibility.",
+  "self_hash": "Not embedded; final manifest bytes are recorded in ADAPTER.json and outer SHA256SUMS."
+}

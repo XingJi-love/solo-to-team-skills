@@ -1,0 +1,64 @@
+# 街区地图共创工作坊 · 半成品交接单
+
+**Neighbourhood Map Workshop · Starting brief**  
+版本 **MAP-20-R1**。这是一道离线合成题。活动、人员、报价都是练习材料，只授权制作与审核文件。所有金额均为人民币元。  
+This is a fictional, offline exercise. Prepare and review files only. All prices are synthetic and in CNY.
+
+把本文件交给团队首席。第一条可以发：“请接手这份 20 人活动半成品，核对已定事项与待办，告诉我你接的是哪个版本。”收到首席回执后，再单独发你此次的人数变更，并请首席交回可打开的执行包。  
+Send this brief to the team lead. First ask the lead to acknowledge the 20-person draft and its version. After that acknowledgement, send the new headcount as a separate request and ask for the reviewed delivery pack.
+
+## 活动与锁定项 / Event and fixed decisions
+
+参与者分桌拼贴街区地图，散场前把各桌的图拼成一份共同作品。当前底稿按 **20 名参与者**编制。场地只在当天 **14:00–17:00** 开放，预算上限 **1500 元**。下列场地、人员可用时间、流程时段和单价已经商定；人数相关的桌数、物料采购单位数和分发责任可调整。  
+Participants build a neighbourhood map in groups and assemble it before leaving. The draft covers **20 participants**. Venue hours are **14:00–17:00**; the budget cap is **CNY 1,500**. Venue, staff availability, time slots and prices are fixed. Quantities, table count and distribution duties may change with headcount.
+
+- 最多可用 6 张工作桌。每桌最多安排 4 名参与者。使用能容纳当期人数的最少桌数。房间总容量为 30 人，另有 3 名工作人员计入场地容量；工作人员自带饮水、名牌与个人用品，不占参与者桌位、物料份额。  
+  Up to six worktables, four participants per table. Use the fewest tables that fit. The room holds 30 people including three staff. Staff bring their own supplies and take no participant seats or kits.
+- 活动带领人和现场志愿者均可在 14:00–17:00 在岗；物资协调员只在 14:00–16:30 在岗。场租含六桌和座椅，清洁费已含在固定预算行中；志愿者与物资协调员服务的计费金额均为 0。  
+  Facilitator and floor volunteer are available throughout; the supplies coordinator leaves at 16:30. Tables and chairs are included in the room fee. The volunteer and coordinator carry no additional fee.
+
+## 已定流程 / Fixed programme
+
+| 时间 / Time | 环节 / Session | 已知安排 / Existing assignment |
+|---|---|---|
+| 14:00–14:15 | 入场、签到、领名牌 / Check-in and badges | 志愿者签到，物资协调员布桌 / Volunteer checks in guests; coordinator sets tables |
+| 14:15–14:35 | 示范、分桌 / Demonstration and seating | 带领人示范，志愿者引导 / Facilitator demonstrates; volunteer seats groups |
+| 14:35–15:20 | 绘图第一轮 / Mapping, round one | 带领人主持；物资协调员发包 / Facilitator leads; coordinator hands out kits |
+| 15:20–15:35 | 茶歇与补给 / Water break | 物资协调员补水 / Coordinator distributes water |
+| 15:35–16:20 | 绘图第二轮 / Mapping, round two | 带领人主持；志愿者巡桌 / Facilitator leads; volunteer assists tables |
+| 16:20–16:45 | 汇图和展示 / Assemble and present | 带领人主持 / Facilitator leads |
+| 16:45–17:00 | 回收工具、场地交还 / Collect tools and hand over room | 回收工具的责任人待定 / Tool-return owner open |
+
+## 合成报价及现有预算 / Synthetic prices and current budget
+
+以下是完整计费口径。每名参与者至少拿到一套材料、一瓶水和一张名牌；每个实际使用的工作桌配一套公用工具。只采购满足这些约束所需的最少整包、整箱或整套，余件可留作备品。报价已含全部费用。  
+Each participant needs one kit, one bottle and one badge. Each occupied table needs one shared tool set. Buy the minimum whole packs, cases or sets that satisfy demand. Surplus units remain as spares. All listed prices are inclusive.
+
+| 项目 / Item | 计费单位 / Billing unit | 单价 / Unit price | 20 人底稿数 / Draft units | 小计 / Subtotal |
+|---|---|---:|---:|---:|
+| 场租 / Room | 固定，整场 / flat | 420 | 1 | 420 |
+| 活动带领人 / Facilitator | 固定，整场 / flat | 300 | 1 | 300 |
+| 清洁 / Cleaning | 固定，整场 / flat | 80 | 1 | 80 |
+| 拼贴材料 / Map kits | 5 套一包 / pack of 5 | 62 | 4 | 248 |
+| 饮水 / Water | 6 瓶一箱 / case of 6 | 30 | 4 | 120 |
+| 名牌 / Badges | 10 张一包 / pack of 10 | 28 | 2 | 56 |
+| 公用工具 / Shared tools | 每使用一桌配一套 / set per occupied table | 25 | 5 | 125 |
+
+20 人版本合计 **1349 元**，可用余量 **151 元**。  
+The 20-person draft totals **CNY 1,349**, leaving **CNY 151**.
+
+## 接手后待办 / Open work
+
+1. 收到变更后，逐项核对桌位、场地容量、采购单位、现场物料和预算。表内列出需求数、实有数或拟配置数、金额和余量，使人能够复算。  
+   On change, reconcile seating, room capacity, purchasing units, supplies, total and remaining budget. Make calculations reproducible.
+2. 旧便签写着“散场由物资协调员收工具”，还没有通过。用上面的在岗表确定可执行的接班人，并写明协调员在离场前把哪份清单交给谁、接收者如何点收。  
+   An unapproved note assigns final tool collection to the supplies coordinator. Resolve it using the availability above. Specify who receives the inventory list before the coordinator leaves and how the count is checked.
+3. 把更新后的执行包交回首席原会话，包含日程、物料与预算明细、可执行的责任和交接清单。请独立审核席打开实际成品，给出审核的版本与结论；有退修时核最新版。  
+   Return an openable package in the lead’s original conversation: programme, supplies and budget, assignments and handoffs. A separate reviewer should open the actual deliverable and identify the version reviewed and the outcome, including the latest revision if returned for correction.
+
+
+## 随本单交给首席 / Send with the brief
+
+> 制作与审核时，请分别核两处：成果若写了生效日期，来源是哪条输入，没有来源就写日期待定；每项改动是否传到所有实际受影响的表格、通知或交接对象。审核官在原审核回复中指出所读版本、来源和核对位置，首席交回同版。
+
+> During production and independent review, check the original source for any effective date, mark the date pending if no source sets it, and trace each change into every affected table, notice or handoff. In the existing review reply, name the version, source and locations checked. Return that same version through the lead.

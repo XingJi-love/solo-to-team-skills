@@ -1,0 +1,22 @@
+{
+  "status": "local_candidate_revision_not_published",
+  "product": {
+    "filename": "Solo-to-Team-MAS-rc15-skills-rc5-grok-design2-doc1-adapter5-candidate.zip",
+    "bytes": 25183561,
+    "sha256": "4b4a7a6c9fca0aa5b371e0b49e6b2a3c3f93e3c3111d8661a1c2b6ad5b8e0706"
+  },
+  "source": {
+    "filename": "MAS-rc15-three-rc5-grok-design2-doc1-adapter5-maintainer-source.zip",
+    "bytes": 23126437,
+    "sha256": "d8d253048dccec236b7e3846eeacf65041eb46d42ceb2f6fa2aad87536ca2b83"
+  },
+  "platforms": {
+    "deepseek": "0.1.0-rc.5",
+    "workbuddy": "0.1.0-rc.5",
+    "openmaus": "0.1.0-rc.5-om.4",
+    "grok": "grok-task-materials-design-2-doc-1 / adapter.5"
+  },
+  "preserved": "16 seats, 6 suggested groups, 26 suggested memberships, original four Skills and protected MAS workbenches",
+  "native_acceptance": "Other three payloads unchanged. Current Grok doc1 returned saved body and manifest byte-verified, old header preserved; named invocation and references readable are self-report without independent raw traces. No new business or same-Bot fresh-chat acceptance.",
+  "core_and_workbench_bytes_unchanged": true
+}

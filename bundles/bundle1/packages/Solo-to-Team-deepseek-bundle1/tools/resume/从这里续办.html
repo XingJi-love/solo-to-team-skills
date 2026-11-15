@@ -1,0 +1,163 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'self' file: 'unsafe-inline';style-src 'unsafe-inline';base-uri 'none';form-action 'none'"><title>从这里续办 1.3 · 一人成阵</title><style>
+:root{--bg:#f5f3ea;--card:#fffef9;--ink:#173732;--low:#48665a;--acc:#006454;--line:#b9cabf}*{box-sizing:border-box}body{font:16px/1.5 'PingFang SC',system-ui,sans-serif;background:var(--bg);color:var(--ink);margin:0}main{margin:auto;max-width:940px;padding:26px clamp(14px,4vw,40px) 36px}h1{font:600 clamp(29px,5vw,47px)/1.13 'Songti SC',Georgia,serif;margin:0.25em 0}h2{font-size:1.2rem;margin:0 0 .35em}p{margin:.45em 0}small,.low{color:var(--low)}.card,details.out{background:var(--card);border:1px solid var(--line);padding:15px 17px;margin:12px 0}.result{border-top:4px solid var(--acc)}.row{display:flex;flex-wrap:wrap;gap:9px;align-items:center}.files{display:inline-block;border:1px solid var(--acc);padding:.4em .7em;border-radius:4px;background:var(--card);color:var(--acc);cursor:pointer;position:relative}.files input{opacity:0;position:absolute;inset:0;width:100%;cursor:pointer}.files:focus-within,button:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #2870a8;outline-offset:2px}button{font:inherit;color:var(--ink);cursor:pointer}.btn{border:1px solid var(--acc);background:var(--acc);color:white;padding:.4em .7em;border-radius:4px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.field{display:block;margin:7px 0;font-size:.9rem}.field input,.field textarea,.field select{display:block;width:100%;font:inherit;padding:6px 8px;border:1px solid var(--line);color:var(--ink);background:white;border-radius:3px}.field textarea{min-height:56px}.part{margin:8px 0;padding:9px 0;border-bottom:1px solid var(--line)}.part .files{font-size:13px}.mono{font-family:ui-monospace,monospace;font-size:.78rem;overflow-wrap:anywhere}pre{white-space:pre-wrap;overflow-wrap:anywhere;margin:.5em 0;font-size:.88rem}summary{cursor:pointer;font-weight:650}details p{font-size:.9rem}.bad{color:#8b3d12}#answer{font-size:1.45rem;color:var(--acc);margin:.2em 0}.note{border-left:3px solid var(--line);padding-left:9px;font-size:.88rem}#filesRead{overflow-wrap:anywhere}@media(max-width:560px){.grid{grid-template-columns:1fr;gap:0}.card,details.out{padding:12px}.row{align-items:flex-start}}
+</style><script src="resume-core.js" defer></script><script src="resume-i18n.js" defer></script></head><body><main><button id="language" type="button" style="float:right" aria-label="Switch to English">English</button><small>一人成阵 · 本地续办</small> <small aria-label="Version">1.3</small><h1>下一棒该做什么？</h1><p>打开断点和它引用的实物。这里核文件、指出下一棒，所有内容都留在此页，不会派工或发件。</p>
+<section class="card"><h2>打开这次的证据</h2><div class="row"><label class="files">选择 checkpoint.json<input type="file" id="load" accept=".json,application/json"></label><label class="files">选择已保存的文件，可多选<input type="file" id="files" multiple></label></div><p id="filesRead" class="low">先选断点，再选产物及已有的审核、交件或接收记录。</p><p id="alert" class="bad" role="alert"></p></section>
+<section class="card result" aria-live="polite"><h2>核收结果</h2><p id="answer">尚未读取断点</p><p id="next"></p><p id="previous" class="low"></p><pre id="repeat"></pre><details><summary>本次核到的文件与来源</summary><pre id="evidence"></pre><p>页面会重算本地 SHA-256。记录的作者和交件是否真的来自所称宿主，需要回到记录给出的原入口核实。</p></details></section>
+<details class="out" id="bindings"><summary>原席出记录 · 复制一条绑定草稿</summary>
+<p>由实际出件人使用。选择原始断点和对应文件后，本页复制任务范围、实物指纹和原交还入口。回执中的目标逐字取自断点，说明另写在正文。</p>
+<label class="field">这次由哪一席出记录<select id="bindKind"><option value="review">审核席 · 独审</option><option value="dispatch">首席 · 交件</option><option value="receipt">接收席 · 实收</option></select></label>
+<label class="field">只读绑定草稿<textarea rows="5" class="mono" id="bindSnippet" readonly placeholder="选择断点与实际产物后生成"></textarea></label>
+<button type="button" id="copyBinding" class="btn" disabled>复制绑定草稿</button>
+<p id="bindStatus" class="low" role="status"></p><p id="bindHelp" class="note"></p>
+</details>
+<details class="out" id="edit"><summary>填写或更新 checkpoint.json</summary><p>可以打开已有断点继续填。更换文件时不会自动覆盖已登记指纹。只有核过实际版本、明确要写入新断点时才点“登记这份文件”。</p><div class="grid">
+<label class="field">任务标识<input id="taskId"></label><label class="field">交还入口（共同约定的别名）<input id="returnTo"><small id="targetLock"></small></label></div>
+<label class="field">原任务<textarea id="request"></textarea></label><label class="field">最新变更（确无变更填“无”）<textarea id="change"></textarea></label>
+<p>本次范围的 SHA-256</p><p class="mono" id="scope">先填写上述四项。</p>
+<label class="field">产物版次<input id="version"></label><div id="parts"></div>
+<div class="grid"><label class="field">台账中的下一责任席<select id="owner"><option value="lead">首席 · lead</option><option value="producer">生产官 · producer</option><option value="reviewer">审核官 · reviewer</option><option value="recipient">接收席 · recipient</option></select></label><label class="field">台账中的下一具体动作<input id="action"></label></div><label class="field">不可盲重做的项目（每行一条）<textarea id="avoid"></textarea></label>
+<button class="btn" id="save" type="button">另存当前断点 JSON</button><p class="note">保存是下载副本。把核准的断点与原文件放回同一共享文件夹；两端只需访问该文件夹。缺文件时可保留当前记录后继续找回。</p></details>
+<details class="out"><summary>原件怎样对应这项工作</summary><p>展开上方“原席出记录”复制草稿，由原席如实填写并附在原记录正文后，再将该记录的指纹写回断点。格式与开工／换会话短指令见 <a id="guide" href="开工与换会话.md">使用说明</a>。只有实际接收席才能出具实收记录。没有回执就保留“待接收”。</p></details></main>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  const $=id=>document.getElementById(id);
+  const partNames={artifact:['产物','Deliverable'],review:['独立审核','Independent review'],dispatch:['交件','Dispatch'],receipt:['接收回执','Receipt']};
+  const seatNames={lead:['首席','Lead'],producer:['生产官','Producer'],reviewer:['审核官','Reviewer'],recipient:['接收席','Recipient']};
+  let en=location.hash.toLowerCase()==='#en';
+  const t=(zh,english)=>en?english:zh;
+  const why=message=>en?ResumeEnglish.explain(message):message;
+  const part=name=>t(...partNames[name]);
+  const seat=name=>t(...seatNames[name]);
+  const staticNodes=[];
+  const walker=document.createTreeWalker(document.querySelector('main'),NodeFilter.SHOW_TEXT);
+  for(let node;node=walker.nextNode();){
+    const original=node.nodeValue, key=original.trim();
+    if(ResumeEnglish.staticText.has(key))staticNodes.push([node,original,ResumeEnglish.staticText.get(key)]);
+  }
+  const live=new Map();
+  function show(id,fn){live.set(id,fn);$(id).textContent=fn()}
+  function pair(id,zh,english){show(id,()=>t(zh,english))}
+  function error(message){show('alert',()=>why(message))}
+  function renderLanguage(){
+    en=location.hash.toLowerCase()==='#en';
+    document.documentElement.lang=en?'en':'zh-CN';
+    document.title=t('从这里续办 1.3 · 一人成阵','Resume this task 1.3 · Solo to Team');
+    for(const [node,original,english] of staticNodes)node.nodeValue=en?english:original;
+    for(const [id,fn] of live)$(id).textContent=fn();
+    $('language').textContent=t('English','中文');
+    $('language').setAttribute('aria-label',t('Switch to English','切换为中文'));
+    $('guide').href=t('开工与换会话.md','README.en.md');
+    $('bindSnippet').placeholder=t('选择断点与实际产物后生成','Choose a checkpoint and its actual deliverable first');
+    const opt=$('owner').querySelector('[data-original]');if(opt)opt.textContent=savedOwner(opt.value);
+  }
+  $('language').onclick=()=>{location.hash=en?'zh':'en'};
+  window.addEventListener('hashchange',renderLanguage);
+  let generation=0,loadEpoch=0,bindEpoch=0,bank=[],opened=false,inputRejected=false;
+  const draftTemplate=()=>({format:'solo-to-team.checkpoint',version:1,task:{id:'',request:'',latest_change:'',return_to:''},artifact:{file:'',version:'',sha256:''},review:{file:'',sha256:''},dispatch:{file:'',sha256:''},receipt:{file:'',sha256:''},next:{owner:'lead',action:''},do_not_repeat:[]});
+  let draft=draftTemplate();
+  const ids={taskId:'id',request:'request',change:'latest_change',returnTo:'return_to'};
+  function fromForm(){
+    for(const [id,key] of Object.entries(ids))if(id!=='returnTo'||!$('returnTo').readOnly)draft.task[key]=$(id).value;
+    draft.artifact.version=$('version').value;draft.next={owner:$('owner').value,action:$('action').value};draft.do_not_repeat=$('avoid').value.split('\n').map(x=>x.trim()).filter(Boolean);
+  }
+  function savedOwner(label){
+    const id=ResumeCheck.ownerId(label);if(id===label)return seat(id);
+    const orig=label.trim()?'“'+label.slice(0,70)+'”':t('（空标签）','(empty)');
+    return id?seat(id)+t('（旧写法 '+orig+'，规范写法 '+id+'）',' (saved as '+orig+'; standard label: '+id+')'):t('未识别的席位标签'+orig+'；可在填写区选择责任席','Unknown saved owner '+orig+'. Choose a role in the editor if needed.');
+  }
+  function fillOwner(label){
+    const field=$('owner');field.querySelector('[data-original]')?.remove();
+    if(label!==ResumeCheck.ownerId(label)){const opt=new Option(savedOwner(label),label);opt.dataset.original='true';field.add(opt)}
+    field.value=label;
+  }
+  function fill(){
+    for(const [id,key] of Object.entries(ids))$(id).value=draft.task[key];
+    $('version').value=draft.artifact.version;fillOwner(draft.next.owner);$('action').value=draft.next.action;$('avoid').value=draft.do_not_repeat.join('\n');
+    for(const k of Object.keys(partNames)){
+      const entry=draft[k];show('ref-'+k,()=>entry.file?entry.file+'　'+entry.sha256:t('未登记','Not registered'));
+    }
+  }
+  async function readBytes(k,entry){
+    const leaf=entry.file.split(/[\\/]/).pop();const matches=bank.filter(f=>f.name===leaf);
+    if(matches.length!==1)return {reason:matches.length?'同名候选超过一份，请只选择确切的文件。':'尚未选到登记的文件，请找回 '+entry.file+'。'};
+    return {bytes:await matches[0].arrayBuffer()};
+  }
+  const authorHelp={
+    review:['审核席请在自己核过的原记录中补 actor=reviewer、可查的 source_ref 和实际结果 pass 或 revise。','Reviewer: after examining the deliverable, enter actor=reviewer, a traceable source_ref and your actual result (pass or revise).'],
+    dispatch:['首席请在自己确实交过件的原记录中补 actor=lead、原发件位置 source_ref 和结果 sent。只修字段时沿用原发件位置。','Lead: after dispatch, enter actor=lead, the actual dispatch location as source_ref, and result=sent. When correcting the record, keep the original dispatch location.'],
+    receipt:['目标接收席请在自己实收的原记录中补 actor=recipient、原收件位置 source_ref 和结果 received。草稿中的交件指纹取自所选的原发件记录。','Recipient: after receiving the actual file, enter actor=recipient, the receipt location as source_ref, and result=received. The dispatch hash comes from the selected dispatch record.']
+  };
+  function clearBinding(){bindEpoch++;$('bindSnippet').value='';$('copyBinding').disabled=true;pair('bindStatus','','')}
+  async function showBinding(){
+    clearBinding();const rev=bindEpoch,kind=$('bindKind').value;
+    show('bindHelp',()=>t(...authorHelp[kind])+t(' 三个空栏由原席填写；本页只生成草稿。',' Only the actual author fills those three blank fields.'));
+    if(!$('bindings').open)return;
+    if(!opened||inputRejected){pair('bindStatus','请选择有效的原始断点与原文件。','Choose a valid original checkpoint and its files.');return}
+    try{
+      const line=await ResumeCheck.bindingDraft(structuredClone(draft),kind,readBytes);if(bindEpoch!==rev)return;
+      $('bindSnippet').value=line;$('copyBinding').disabled=false;
+      pair('bindStatus','已核所选文件。把本行放在自己的真实来源记录中，保留原正文。','Files checked. Append the draft line to your own source record and keep the original account.');
+    }catch(e){if(rev===bindEpoch)show('bindStatus',()=>why(e.message))}
+  }
+  $('bindings').addEventListener('toggle',showBinding);$('bindKind').addEventListener('change',showBinding);
+  $('copyBinding').onclick=async()=>{
+    const field=$('bindSnippet'),line=field.value,epoch=bindEpoch;if(!line)return;
+    try{await navigator.clipboard.writeText(line);if(epoch===bindEpoch)pair('bindStatus','已复制这条草稿。请原席补齐自己的三个空栏。','Draft copied. The actual author completes the three blank fields.')}
+    catch{if(epoch!==bindEpoch)return;field.focus();field.select();pair('bindStatus','草稿已选中。请按 ⌘C 或 Ctrl+C；手机可长按复制。','Draft selected. Press ⌘C or Ctrl+C, or long-press to copy on a phone.')}
+  };
+  function resetAnswer(zh,english){pair('answer',zh,english);for(const id of ['next','previous','repeat','evidence'])pair(id,'','')}
+  async function refresh(){
+    const seq=++generation;showBinding();if(inputRejected)return;const cp=structuredClone(draft);error('');
+    try{
+      const scope=Object.values(cp.task).every(v=>v.trim())?await ResumeCheck.scopeHash(cp.task):null;
+      if(seq!==generation)return;show('scope',()=>scope||t('先填写上述四项。','Complete the four task fields above.'));
+      if(!opened&&!$('edit').open){resetAnswer('尚未读取断点','No checkpoint open');return}
+      const r=await ResumeCheck.decide(cp,readBytes);if(seq!==generation)return;
+      const eng=ResumeEnglish.verdict(r);
+      show('answer',()=>t(r.title,eng[0]));show('next',()=>seat(r.owner)+' · '+t(r.action,eng[1]));
+      const recorded=cp.next.action||cp.next.owner!==ResumeCheck.ownerId(cp.next.owner);
+      show('previous',()=>recorded?t('此前填写的席位与动作（仅供对照）：','Previously recorded owner and action (original wording): ')+savedOwner(cp.next.owner)+(cp.next.action?' · '+cp.next.action:''):'');
+      show('repeat',()=>cp.do_not_repeat.length?t('不可盲重做','Preserve this work (original wording)')+'\n'+cp.do_not_repeat.map(x=>'• '+x).join('\n'):'');
+      show('evidence',()=>r.log.map(x=>part(x.part)+' · '+x.file+'\n'+x.actual+(x.source?'\n'+t('来源 ','Source: ')+x.source:'')).join('\n\n')||t('本轮尚未核到文件。','No files verified yet.'));
+    }catch(e){if(seq===generation){resetAnswer('待核原记录','Check the original record');error(e.message)}}
+  }
+  $('load').onchange=async e=>{
+    const f=e.target.files[0];if(!f)return;const seq=++loadEpoch;clearBinding();
+    try{
+      const cp=JSON.parse(await f.text());ResumeCheck.validate(cp);if(seq!==loadEpoch)return;
+      draft=cp;$('returnTo').readOnly=Boolean(cp.task.return_to);
+      show('targetLock',()=>cp.task.return_to?t('已锁定原断点的交还入口；位置说明写在来源记录正文。','Destination locked to the original checkpoint. Add location notes in the source record body.'):'');
+      opened=true;inputRejected=false;bank=[];$('files').value='';
+      show('filesRead',()=>t('已读 '+f.name+'；请选择这份断点引用的证据。','Opened '+f.name+'. Select its referenced files.'));
+      fill();await refresh();
+    }catch(err){if(seq===loadEpoch){generation++;inputRejected=true;clearBinding();pair('bindStatus','需重新打开有效断点。','Reopen a valid checkpoint.');resetAnswer('所选断点未通过格式检查；请重新选择有效断点','Invalid checkpoint. Choose a valid checkpoint file.');error(err.message)}}
+  };
+  $('files').onchange=e=>{
+    bank=Array.from(e.target.files);
+    show('filesRead',()=>t('本次选入 '+bank.length+' 个文件：','Selected files ('+bank.length+'): ')+bank.map(f=>f.name).join(t('、',', ')));
+    refresh();
+  };
+  for(const k of Object.keys(partNames)){
+    const row=document.createElement('div');row.className='part';const title=document.createElement('strong');title.id='title-'+k;
+    const ptr=document.createElement('p');ptr.className='mono';ptr.id='ref-'+k;
+    const label=document.createElement('label');label.className='files';const caption=document.createElement('span');caption.id='register-'+k;
+    const file=document.createElement('input');file.type='file';
+    file.onchange=async()=>{
+      const f=file.files[0];if(!f)return;const current=draft;
+      try{const hash=await ResumeCheck.hash(await f.arrayBuffer());if(current!==draft)return;fromForm();draft[k].file=f.name;draft[k].sha256=hash;bank=bank.filter(x=>x.name!==f.name);bank.push(f);opened=true;fill();refresh()}
+      catch(e){error(e.message)}
+    };
+    label.append(caption,file);row.append(title,ptr,label);$('parts').append(row);
+    show(title.id,()=>part(k));pair(caption.id,'登记这份文件','Register this file');
+  }
+  for(const id of [...Object.keys(ids),'version','owner','action','avoid'])$(id).addEventListener('input',()=>{fromForm();opened=true;refresh()});
+  $('edit').addEventListener('toggle',()=>{if($('edit').open)refresh()});
+  $('save').onclick=()=>{
+    try{
+      if(inputRejected)throw Error('请先重新打开有效断点，避免误存先前记录。');
+      fromForm();ResumeCheck.validate(draft);const blob=new Blob([JSON.stringify(draft,null,2)+'\n'],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='checkpoint.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),3000);
+    }catch(e){error(e.message)}
+  };
+  fill();renderLanguage();
+});
+</script></body></html>

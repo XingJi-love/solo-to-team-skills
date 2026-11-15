@@ -1,0 +1,76 @@
+# 一人成阵
+
+**队内候选 · 新增内容尚未分配公开许可**
+
+[English](README.en.md) · [打开离线总入口](index.html)
+
+采用 GitHub 展示布局时可直接看下方动图。要实际点按，下载并解压整包，双击根目录的 index.html。
+
+## 半成品交给首席。 改了要求，再收成品。
+
+你只在首席的原对话提需求。制作席接手修改，另一席打开文件审核，首席把同一版成品和结论交回来。
+
+**[我来验这一单](learn/try-review.html)** · [组建自己的团队](builder/四端统一建队台.html)  
+离线体验，无需账号或模型
+
+[![一套备品，为什么要退修？](media/demo.zh-CN.gif)](media/demo.zh-CN.mp4)
+
+[25 秒演示](media/demo.zh-CN.mp4) · [动图版](media/demo.zh-CN.gif)
+
+## 在我的平台跑首单
+
+选已有可用模型的平台，先用预设三席。
+
+| Platform | 从这里开始 |
+| --- | --- |
+| **Grok Bot** | [打开首单包](core/adapters/grok/first-order.zip) · 解压后复用已有席位，按岗位卡补齐缺席。 |
+| **OpenMausBot** | [查看部门文件](core/adapters/openmaus/team.openmaus.json) · 在 OpenMausBot 0.1.148 选「模板 → 导入」，选择解压包内 core/adapters/openmaus/team.openmaus.json，预览时核对同名部门和权限。 |
+| **WorkBuddy** | [看安装入口](core/adapters/workbuddy/start.html) · 在「我的专家」准备项目交付团，选专用工作区，再把半成品交给主理人。 |
+| **DeepSeek Harness** | [取标准项目包](core/adapters/deepseek/project.zip) · 解压标准包，工作区选「一人成阵-DSH」目录本身，里面有 inputs 和隐藏的 .dsh。新会话选 /solo-to-team。 |
+
+已有 DS Bot v0.3.2？在统一建队台选择 DeepSeek，再选 DS Bot，可导出长期席位的离线建队计划；实际建队仍需在自己的 Main Bot 核清并确认。 [打开统一建队台](builder/四端统一建队台.html)
+
+本计划按 DS Bot v0.3.2 公开源码整理，尚未在真实 DS Bot 里试走；实际结果以接收账号的 Main Bot 回查为准。
+
+<details>
+<summary>查看此入口的验证范围</summary>
+
+**Grok Bot**　现役团队曾按一次督导退修，复核后在首席原对话交回 R2。自配入口提供引导式建队；整队原生导入尚无实证。
+
+**OpenMausBot**　首单用手动建立的三席完成。自配四席经 0.1.148 原生数据层隔离导入；用户真实账号界面跑单尚待验证。重复添加会另建部门。
+
+**WorkBuddy**　0.1.0 原件的首单发生在已配置的私有三席。Mac 私有安装器适配 WorkBuddy 5.9.3，未经 Apple 公证。原件示例邮箱仅作占位。
+
+**DeepSeek Harness**　标准包的变更卡在同级「试用者第二步」，等首席确认底稿再发。自配项目 ZIP 则直接解到新空目录，选择含 team.definition.json 的那一层。标准与自配四席均有已配置本机的实际任务留件。
+
+首单记录来自本机观察与团队留件，未取得平台端运行日志。不同宿主和不同导出各自核收。新用户独立装队的成功率尚未测量。
+
+</details>
+
+## 交第一单
+
+1. **交半成品**　把 20 人活动底稿发给首席，请它先确认接到哪一版。 [取活动底稿](core/brief/01-intake.md)
+
+2. **中途改要求**　收到版本回执，再在同一会话给出 24 人变更。 [取变更卡](core/brief/02-change.md)
+
+3. **验同一版**　打开执行包和审核记录，对照版本、变更和实际交件。换会话时用已有断点接续。 [打开续办工具](resume/从这里续办.html)
+
+收件只说明文件到了。验收通过，需要审核席实际打开对应版本并给出结论。群里同步进度，派工和执行仍按原有授权。
+
+## “第二轮”怎么变成了“第二桌”？
+
+一份准备放上 GitHub 的展示稿，把原表中的轮次写成了桌号。跟着两版字幕、审核意见和实际收件，看这项错误如何在跨宿主交付中被纠正。 [看这次真实交付](proof/real-handoff/index.html)
+
+## 接着用
+
+- [换一道题：社区维修预约](core/examples/maintenance/01-intake.md) · 地点临时封闭，看看哪些预约和通知需要跟着改。
+
+- [原来的四个 Skills](core/skills-original/README.md) · 分别取用，也可配合团队工作。
+
+- [开发者源码](source/README.md) · 查看本候选包的源码与复现入口。
+
+[群里报了新入口，谁有权改箱数？](proof/authority/index.html) 两份合成输入和实际复核摘录可供对照。
+
+[原核心首单入口](core/index.html) · [核心说明](core/README.md) · [现行统一建队台](builder/四端统一建队台.html)。核心保留早期建队器供原版复查。
+
+本包版本 `[[MAS:version]]` · [Scope / 使用范围](SCOPE.md)

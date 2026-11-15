@@ -1,0 +1,126 @@
+{
+  "format": "mas-zip-layout-v1",
+  "sha256": "bdc0ea874dc5d5e9727c7148f28705303f05f4c4adfa4092a3908443271ed11f",
+  "members": [
+    {
+      "name": "README.en.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        13,
+        54,
+        2
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "eee11d805605531a0b934207b0fe79ce73fcabc9004cb719fe7baa0f246bb66c",
+      "source": "mas/release/payload/resume/README.en.md",
+      "level": 6
+    },
+    {
+      "name": "checkpoint.json",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        12,
+        6,
+        4
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "0a23311c5f8aec6e637f9a6f71919393f3cd2efb93479d561bbac3ed60e00cf7",
+      "source": "mas/release/payload/resume/checkpoint.json",
+      "level": 6
+    },
+    {
+      "name": "resume-core.js",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        12,
+        54,
+        52
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "a7aba8960f43ae60d78158b71e0530580b92031fcfa2c6a0e49ea3ae65f99aca",
+      "source": "mas/release/payload/resume/resume-core.js",
+      "level": 6
+    },
+    {
+      "name": "resume-i18n.js",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        13,
+        37,
+        24
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "25420fe3016269faf25ab8dfc7f21b8befbe4f4f21471eb4b30737f1e0e75744",
+      "source": "mas/release/payload/resume/resume-i18n.js",
+      "level": 6
+    },
+    {
+      "name": "从这里续办.html",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        13,
+        54,
+        2
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "3916b7af8613651c3fbe96b827318ad56e77f03d8b367d0a3f887d2b40324d1f",
+      "source": "mas/release/payload/resume/从这里续办.html",
+      "level": 6
+    },
+    {
+      "name": "开工与换会话.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        13,
+        54,
+        2
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "9bc0886010babffc85dd98a0a4962e102ed8fe636888fff6c5282550bd12cc5c",
+      "source": "mas/release/payload/resume/开工与换会话.md",
+      "level": 6
+    }
+  ]
+}

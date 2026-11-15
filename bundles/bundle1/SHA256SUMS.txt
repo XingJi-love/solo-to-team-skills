@@ -1,0 +1,6 @@
+d0bc4f7e1be1a1837e5913cecbf4b4354678a4310d9e95b3cad91a9319d4ad0c  Solo-to-Team-bundle1-packaging-source.zip
+991bdc44c9cbbf1412e769996a84a07ea916d0cf66229fb31ec10abc36c21057  packages/Solo-to-Team-deepseek-bundle1.zip
+2650caea4dd96ed4dc2f9661257cbf8e467aa17e87ab15f4cdbe831e8f84f155  packages/Solo-to-Team-grok-bundle1.zip
+d8807514ae3db5b65f0a9324d6fa62de803430a62805f45765a18717d0ce63db  packages/Solo-to-Team-openmaus-bundle1.zip
+651159b3122c54f08b5856d0fe0367e7fb3496c8f16fb55cb6d6b03778645239  packages/Solo-to-Team-workbuddy-bundle1.zip
+43d51b1b3645ccf5a1f43497504defa3a5b1c3dd3a89018a81ea06725628afc5  pdf/一人成队_MAS工程与组织设计_v3_完整包与配置.pdf

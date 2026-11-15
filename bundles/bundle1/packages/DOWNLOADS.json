@@ -1,0 +1,41 @@
+{
+  "bundle_version": "bundle.1",
+  "packages": [
+    {
+      "platform": "Grok Bot",
+      "id": "grok",
+      "file": "Solo-to-Team-grok-bundle1.zip",
+      "bytes": 3400228,
+      "sha256": "2650caea4dd96ed4dc2f9661257cbf8e467aa17e87ab15f4cdbe831e8f84f155",
+      "files": 128,
+      "skill": "solo-to-team-grok"
+    },
+    {
+      "platform": "WorkBuddy",
+      "id": "workbuddy",
+      "file": "Solo-to-Team-workbuddy-bundle1.zip",
+      "bytes": 3343116,
+      "sha256": "651159b3122c54f08b5856d0fe0367e7fb3496c8f16fb55cb6d6b03778645239",
+      "files": 120,
+      "skill": "solo-to-team-workbuddy"
+    },
+    {
+      "platform": "DeepSeek Harness",
+      "id": "deepseek",
+      "file": "Solo-to-Team-deepseek-bundle1.zip",
+      "bytes": 3385454,
+      "sha256": "991bdc44c9cbbf1412e769996a84a07ea916d0cf66229fb31ec10abc36c21057",
+      "files": 121,
+      "skill": "solo-to-team-deepseek"
+    },
+    {
+      "platform": "Open Master Bot",
+      "id": "openmaus",
+      "file": "Solo-to-Team-openmaus-bundle1.zip",
+      "bytes": 3323612,
+      "sha256": "d8807514ae3db5b65f0a9324d6fa62de803430a62805f45765a18717d0ce63db",
+      "files": 121,
+      "skill": "solo-to-team-openmaus"
+    }
+  ]
+}

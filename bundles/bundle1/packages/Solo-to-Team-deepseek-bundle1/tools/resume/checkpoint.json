@@ -1,0 +1,32 @@
+{
+  "format": "solo-to-team.checkpoint",
+  "version": 1,
+  "task": {
+    "id": "",
+    "request": "",
+    "latest_change": "",
+    "return_to": ""
+  },
+  "artifact": {
+    "file": "",
+    "version": "",
+    "sha256": ""
+  },
+  "review": {
+    "file": "",
+    "sha256": ""
+  },
+  "dispatch": {
+    "file": "",
+    "sha256": ""
+  },
+  "receipt": {
+    "file": "",
+    "sha256": ""
+  },
+  "next": {
+    "owner": "lead",
+    "action": ""
+  },
+  "do_not_repeat": []
+}

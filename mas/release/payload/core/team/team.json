@@ -1,0 +1,204 @@
+{
+  "format": "solo-to-team.team",
+  "version": "1.0.0",
+  "id": "project-delivery-trio",
+  "name": {
+    "zh": "一人成阵 · 项目交付三席",
+    "en": "Solo to Team · Project Delivery"
+  },
+  "entry_role": "lead",
+  "roles": [
+    {
+      "id": "lead",
+      "label": {
+        "zh": "首席执行官",
+        "en": "Team lead"
+      },
+      "responsibility": "接新任务或半成品，核实输入版次、锁定条件和用户要的成品。归口派工、处理必要决定，在原会话交回实物。",
+      "takes": [
+        "用户给出的目标或初稿",
+        "已收到的变更",
+        "制作交件、独立审核结论"
+      ],
+      "returns": [
+        "收件回执",
+        "经独立审核的同版成品及结论",
+        "实际遗留及责任人"
+      ]
+    },
+    {
+      "id": "producer",
+      "label": {
+        "zh": "生产官",
+        "en": "Producer"
+      },
+      "responsibility": "接首席明确的制作委托，保留原稿，给新版编号，交回可打开的产物。收到退修后修正指定问题及其必要关联。",
+      "takes": [
+        "首席核清的输入、约束和交付要求",
+        "针对某个已交版本的修订意见"
+      ],
+      "returns": [
+        "可打开的文件与版次",
+        "改动及尚待核实事项"
+      ]
+    },
+    {
+      "id": "reviewer",
+      "label": {
+        "zh": "审核官",
+        "en": "Independent reviewer"
+      },
+      "responsibility": "独立打开指定成品，对照实际收到的输入与变更核对版本、约束及可用性。将具名版次的结论交首席。",
+      "takes": [
+        "原始条件与最新变更",
+        "生产官交回的实际文件和版次"
+      ],
+      "returns": [
+        "指明文件、版本与依据的通过、退修或缺件说明",
+        "新版受影响部分的复核结论"
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "id": "delivery",
+      "label": {
+        "zh": "本次项目交付组",
+        "en": "Project delivery team"
+      },
+      "members": [
+        "lead",
+        "producer",
+        "reviewer"
+      ],
+      "purpose": "共享本单必要的版本、状态和反馈，实际派工与回件可走点对点。",
+      "role": "coordination",
+      "required_native_chat": false,
+      "confers_approval_or_permissions": false
+    }
+  ],
+  "handoffs": [
+    {
+      "id": "intake",
+      "from": "user",
+      "to": "lead",
+      "when": "new_request_or_change",
+      "carries": [
+        "输入或变更",
+        "目标",
+        "已定约束"
+      ],
+      "done_when": "首席已读实际输入并能指出接手版次；只托付收件时等用户后续，已明令制作时接下一步。"
+    },
+    {
+      "id": "assign",
+      "from": "lead",
+      "to": "producer",
+      "when": "scope_ready",
+      "carries": [
+        "可读输入与变更",
+        "验收条件",
+        "交件要求"
+      ],
+      "done_when": "生产席实际接单。"
+    },
+    {
+      "id": "submit",
+      "from": "producer",
+      "to": "lead",
+      "when": "artifact_ready",
+      "carries": [
+        "可打开的文件",
+        "版次",
+        "待核项"
+      ],
+      "done_when": "首席拿到能供审核席读取的指定版本。"
+    },
+    {
+      "id": "request_review",
+      "from": "lead",
+      "to": "reviewer",
+      "when": "version_available",
+      "carries": [
+        "原始要求",
+        "已收变更",
+        "实际文件",
+        "待审版次"
+      ],
+      "done_when": "另一执行席实际打开指定版本；收件或排队本身不算完成。"
+    },
+    {
+      "id": "return_review",
+      "from": "reviewer",
+      "to": "lead",
+      "when": "review_record_ready",
+      "carries": [
+        "所读文件和版本",
+        "依据",
+        "结论或缺口"
+      ],
+      "done_when": "首席收到对该版本的独立结论，缺件时收到明确的缺项。"
+    },
+    {
+      "id": "revise",
+      "from": "lead",
+      "to": "producer",
+      "when": "changes_requested",
+      "carries": [
+        "原版本",
+        "问题位置",
+        "合格条件"
+      ],
+      "done_when": "生产席另存新版，从 submit 重新接回，经 request_review 和 return_review 复核。"
+    },
+    {
+      "id": "deliver",
+      "from": "lead",
+      "to": "user",
+      "when": "matching_review_passed",
+      "carries": [
+        "同版成品",
+        "对应审核结论",
+        "剩余边界"
+      ],
+      "done_when": "首席打开核准版，在用户最初委托的对话交回用户可打开的成品。"
+    }
+  ],
+  "review": {
+    "independent_of": "producer",
+    "owner": "reviewer",
+    "on_pass": "deliver",
+    "on_specific_defect": "revise",
+    "on_missing_evidence": "首席向持有该输入或成品的席位补件，再交同一审核席。",
+    "regression_scope": "复核受影响部分，复用仍适用的通过证据。"
+  },
+  "guardrails": [
+    "团队配置不授予宿主权限；每次仅使用当前任务已有授权与必要资料。",
+    "共享信息不产生跨席派活权。需新权限、付费、对外行动或不可逆决定时回到有权者。",
+    "各席只认真实实物和版次；同一席扮演多个名字不能证明独立审核。"
+  ],
+  "avatars": {
+    "required": false,
+    "options": [
+      "host-default",
+      "user-supplied-when-supported",
+      "illustration-when-included"
+    ],
+    "role_keys": [
+      "lead",
+      "producer",
+      "reviewer"
+    ],
+    "policy": "头像仅供识别；能力、派工和审核按岗位对应实际席位。"
+  },
+  "companion_skills": {
+    "required_for_first_job": false,
+    "bundled_by_this_file": false,
+    "ids": [
+      "beginner-ops-writing",
+      "dispatch-accept-verify",
+      "evidence-before-done",
+      "ops-case-notes"
+    ]
+  }
+}

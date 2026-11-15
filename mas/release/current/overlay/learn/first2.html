@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none';script-src 'unsafe-inline';style-src 'unsafe-inline';base-uri 'none';form-action 'none'">
+<title>第一次用，先验哪两件 · First time here: check these two things</title>
+<style>
+:root{--paper:#f2f0e6;--sheet:#fffcf4;--ink:#182e2d;--low:#435b55;--line:#c1c9b8;--green:#14614f;--pale:#e2efe2;--amber:#96451e;--warm:#fae7d1}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 'PingFang SC','Microsoft YaHei',system-ui,sans-serif}
+header,main,footer{max-width:860px;margin:auto;padding-left:clamp(14px,4vw,36px);padding-right:clamp(14px,4vw,36px)}
+header{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:20px;color:var(--green);font-size:.86rem;font-weight:650}
+#lang{font:inherit;color:var(--ink);cursor:pointer;background:transparent;border:1px solid #80968c;border-radius:4px;padding:5px 11px}
+#lang:focus-visible,a:focus-visible{outline:3px solid #166c9b;outline-offset:3px}
+h1{font:600 clamp(30px,6vw,52px)/1.15 'Songti SC',Baskerville,Georgia,serif;letter-spacing:-.02em;margin:.5em 0 .2em}
+h2{font:600 clamp(21px,3.4vw,27px)/1.3 'Songti SC',Georgia,serif;margin:0 0 .4em}
+h3{font-size:1rem;margin:1.1em 0 .3em}
+.lead{color:var(--low);font-size:1.05rem;margin:0 0 18px}
+.card{background:var(--sheet);border:1px solid var(--line);border-top:4px solid var(--green);box-shadow:0 4px 0 #e4e1d4;padding:16px clamp(13px,3vw,26px) 20px;border-radius:2px;margin:18px 0}
+.scope{background:#1a423b;color:#fbf9ef;padding:14px clamp(13px,3vw,24px);border-radius:3px;margin:18px 0}
+.scope h2{font-size:1.1rem;margin:0 0 .3em}.scope ul{margin:.3em 0 0;padding-left:1.2em}.scope li{margin:.25em 0}.scope a{color:#cfe8d3}
+ol.steps,ul.plain{margin:.4em 0;padding-left:1.3em}ol.steps li,ul.plain li{margin:.45em 0}
+.tl{list-style:none;margin:.6em 0;padding:0 0 0 14px;border-left:3px solid #bed6c2}
+.tl li{margin:.7em 0}.tl b{color:var(--green)}
+.fact{margin:12px 0;padding:10px 12px;border-left:3px solid var(--green);background:var(--pale)}
+.warn{margin:12px 0;padding:10px 12px;border-left:3px solid var(--amber);background:var(--warm)}
+.cell{display:inline-block;font-weight:700;padding:0 6px;border:1px solid #98afa1;border-radius:3px;background:#fff}
+table{border-collapse:collapse;width:100%;margin:.6em 0;font-size:.94rem}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{background:#edf1e9}
+.num{font-variant-numeric:tabular-nums;font-weight:650}
+.hint{font-size:.86rem;color:var(--low)}
+footer{padding-bottom:34px;color:var(--low);font-size:.83rem;border-top:1px solid var(--line);margin-top:24px;padding-top:12px}
+a{color:var(--green)}
+.en{font-family:system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+.js:not(.is-en) .en{display:none}.js.is-en .zh{display:none}
+hr.sep{border:0;border-top:2px dashed var(--line);margin:30px 0}
+.js hr.sep{display:none}
+</style></head>
+<body>
+<header><span class="zh">随产品离线打开 · 发布候选</span><span class="en">Opens offline with the package · release candidate</span><button type="button" id="lang" hidden>English</button></header>
+<main>
+
+<!-- ========== 中文 ========== -->
+<div class="zh" lang="zh-CN">
+<h1>第一次用，先验哪两件</h1>
+<p class="lead">读完这页，你能做两件事：<b>①</b> 拿到一份别人交来的文件，指出哪一格还是错的；<b>②</b> 不开账号、不用模型，把包里的离线小练习做完，再知道怎么准备自己的那半份项目。</p>
+
+<section class="scope" aria-label="范围">
+<h2>先说这页答什么、不答什么</h2>
+<ul>
+<li>它回应公开仓里两位读者说到的事：<a href="https://github.com/dabingfy-dot/solo-to-team-skills/issues/7" rel="noopener">issue #7</a>（为什么把「收到成果」和「验收通过」分成两步）和 <a href="https://github.com/dabingfy-dot/solo-to-team-skills/issues/15" rel="noopener">issue #15</a>（有读者说用本地 Agent 要花 token、买不起，只能用网页版 AI）。这里只指向，不代为回帖。</li>
+<li>#7 还问了「当初碰到过什么事」。本页不回答这一问，只讲包内留件里真实发生过的事。</li>
+<li>#15：这页和下面的练习<b>不花 token</b>，用浏览器打开本地文件就行。这不等于本地 Agent 的 token 成本问题已经解决，本页不评估那个问题。</li>
+<li>本页是随产品离线打开的发布候选，不提供下载。</li>
+</ul>
+</section>
+
+<section class="card" id="one-zh">
+<h2>第一件：收到了，不等于对了</h2>
+<p>下面是 WorkBuddy 团队回件里的一次真实往返，来自审核记录（按回件自述转述，回件里对角色的叫法与本页不同，本页用原职官名；页内引号只标出关键词，不是逐字摘录；平台内部过程我们没有独立核实）。题目是一场虚构的街区地图共创工作坊，只用来练习。</p>
+<ol class="tl">
+<li><b>收件。</b>先交的是 20 人的半成品。首席回执：版本 <span class="num">MAP-20-R1</span>，合计 <span class="num">¥1,349</span>，余 <span class="num">¥151</span>，待办是「散场收工具责任人未定」，还没开工。这一步只证明双方说的是同一份东西。</li>
+<li><b>变更。</b>参与者从 <span class="num">20</span> 人增到 <span class="num">24</span> 人，<span class="num">¥1,500</span> 预算和 <span class="num">14:00–17:00</span> 照旧。</li>
+<li><b>交件。</b>生产官交出 <span class="num">MAP-24-R1</span>：<span class="num">6</span> 张桌，合计 <span class="num">¥1,464</span>，余 <span class="num">¥36</span>，场地内 <span class="num">27</span> 人，不超过上限 <span class="num">30</span>。</li>
+<li><b>退回。</b>审核官打开实物后还是退回了，原因是两个格子。
+<ul class="plain">
+<li><span class="cell">A4 名牌备品</span> R1 要协调员「应交 6 张」，可同一份 R1 写明这 6 张自 14:00 起由现场志愿者保管、随签到台。协调员照单填，只能写「实交 0、差异 −6」，凭空多出一笔缺。R2 把这格改成「—」，备注志愿者自 14:00 起保管，不纳入这次移交。</li>
+<li><span class="cell">C7 备用材料</span>（A3 同理）R1 把应交数固定写成「1 套」，可计划允许第二轮动用 1 套备品。用掉以后实点是 0，就会被记成短缺。R2 改成「1 套（未动用）／0 套（已动用，注明桌号与时间）」。</li>
+</ul></li>
+<li><b>只改指明处。</b>生产官只改这两个问题和随之要对齐的地方并出 R2（记录报改动 15 处，其中含采纳一条措辞建议），金额和数量一个没动，<span class="num">¥1,464</span>、<span class="num">¥36</span> 照旧。审核官重新打开 R2，<b>重算了全部数，都对</b>，判通过，首席交回。</li>
+</ol>
+
+<div class="fact"><b>为什么分两步。</b>收件回答「我拿到的是哪一版、开头几个数是什么」，验收回答「有人打开实物，每一格在现场填得出来吗」。这个案例里，加总全对，两个格子仍然错。只看收到，或者只看加总，都会放过它们。<br><span class="hint">这是本页对案例的读法，不是审核记录的原话，也不是发起人当初这样分的理由。</span></div>
+
+<h3>拿到文件，先对每一格问两句</h3>
+<ul class="plain">
+<li>这一格写的「应交」，那样东西这时候真在交的人手里吗？（对应 A4）</li>
+<li>如果计划内的正常使用发生了，这一格的数还成立吗？（对应 C7）</li>
+</ul>
+<p class="hint">这两问是本页作者从上面两处退回归纳的，不是审核记录的原话。</p>
+</section>
+
+<section class="card" id="two-zh">
+<h2>第二件：做一遍离线小练习，再备自己的半份</h2>
+<p>练习是包里的 <code>try-review.html</code>。本页和它放在同一个 <code>learn</code> 文件夹里时，可以直接点这个链接：<a href="try-review.html">打开 try-review.html</a>。不联网，不要账号，不用模型。</p>
+<ol class="steps">
+<li>打开后点「签收 R1」。这一步对应上面的「收件」。</li>
+<li>选「备品已领用」，点「通过本格点数」，读反馈：R1 里实点 0 减应交 1，是 −1，合法领用被写成了短缺。再点「退修本格点数」对照。</li>
+<li>点「试另一种情况」，情境会自动换成「备品未领用」。<b>再点一次「通过本格点数」</b>：这次点数相符，同一格能签。</li>
+<li>判断之后，页面里才会出现「打开 R1 / R2 原表对照」（换情境后要重新判断一次才再出现）。点开，读 C7 和 A4 的原文。</li>
+</ol>
+<div class="fact">你该带走的是：同一格，现场情况一变，结论就变。所以验收要问现实，不能只看加总。</div>
+
+<h3>再准备你自己的半份项目（也是离线文字活）</h3>
+<p>照 MAP-20-R1 的样子写成一个文件，每一块都写短：</p>
+<ul class="plain">
+<li>一个版本号，比如 <code>MY-V1</code>。</li>
+<li>已定、不能动的条件。</li>
+<li>可以随人数、数量变化的项。</li>
+<li>还没做的待办，写明谁来做（这是本页的建议）。</li>
+</ul>
+<p>交出去的时候，先<b>单独交这份文件</b>，等对方说出它读到的版本号，再用<b>另一条消息</b>发变更。案例里就是这个顺序。文件交给谁、用什么工具，本页不展开：那取决于你自己的团队和账户，不属于这页的零账号练习。</p>
+<p>同包里另有「带底稿开工」入口（<a href="../start-with-files/index.html">打开「带底稿开工」</a>）：在本机打开一个网页，选入自己的底稿，写明任务和验收点，离线生成一个交给你所用 AI 工具（文中称宿主）的项目包，不需要联网、登录或模型。之后把项目交给宿主去办，才会用到宿主自己的模型、费用和权限，本页不展开。</p>
+<div class="warn">这页不承诺任何结果，也不说明如何获得本包。它只是帮你在第一次用的时候，知道先看哪两处。</div>
+</section>
+
+<section class="card" id="src-zh">
+<h2>数字出处</h2>
+<table>
+<tr><th>页内数字</th><th>出处（本页作者逐个回原件核过）</th></tr>
+<tr><td>MAP-20-R1、¥1,349、¥151、待办原话</td><td>WB 回件审核记录第二节第 1 条；20 人底稿写明合计 1349 元、可用余量 151 元</td></tr>
+<tr><td>20 → 24 人、¥1,500、14:00–17:00</td><td>WB 回件审核记录第二节第 2 条；MAP-24-R1 第 16 行</td></tr>
+<tr><td>6 张桌、¥1,464、¥36、27 ≤ 30</td><td>WB MAP-24-R1 第 3.1 节（第 73 行）、4.2 节（第 129、143、146 行）；审核记录第五节（审核官复核 R2 时的独立复算；R1→R2 数字没动）</td></tr>
+<tr><td>A4 应交 6 张、C7 应交 1 套</td><td>WB MAP-24-R1 A4（第 212 行）、C7（第 237 行）、4.4（第 169 行）</td></tr>
+<tr><td>R2 报改动 15 处、采纳一条措辞建议、没有越界改动</td><td>WB 审核记录第 31、45、49、73 行</td></tr>
+<tr><td>R2 改后的写法</td><td>WB MAP-24-R2 A4（第 214 行）、C7（第 241 行）</td></tr>
+<tr><td>0 − 1 = −1</td><td>同包练习页 <a href="try-review.html">try-review.html</a> 的练习反馈</td></tr>
+<tr><td>「带底稿开工」入口的说明</td><td>队内候选入口说明《从这里开始》（同包「带底稿开工」入口的说明）</td></tr>
+</table>
+<p class="hint">主要数字的依据列于上表。</p>
+</section>
+</div>
+
+<hr class="sep">
+
+<!-- ========== English ========== -->
+<div class="en" lang="en">
+<h1>First time here: check these two things</h1>
+<p class="lead">After this page you can do two things: <b>①</b> take a file someone handed you and point to the cell that is still wrong; <b>②</b> finish the offline exercise in this package with no account and no model, and know how to prepare your own half of a project.</p>
+
+<section class="scope" aria-label="Scope">
+<h2>What this page answers, and what it does not</h2>
+<ul>
+<li>It responds to two things readers raised in the public repository: <a href="https://github.com/dabingfy-dot/solo-to-team-skills/issues/7" rel="noopener">issue #7</a> (why “result received” and “result accepted” are two separate steps) and <a href="https://github.com/dabingfy-dot/solo-to-team-skills/issues/15" rel="noopener">issue #15</a> (a reader says running a local agent costs tokens they cannot afford, so they only use a web-based AI). It only points to them. It does not reply there.</li>
+<li>Issue #7 also asks what happened to the author that led to the split. This page does not answer that. It only describes what actually happened in the retained case files.</li>
+<li>On #15: this page and the exercise below <b>cost no tokens</b>. A browser and a local file are enough. That does not mean the token-cost problem of a local agent is solved, and this page does not assess it.</li>
+<li>This page is a release candidate that opens offline with the product and offers no download.</li>
+</ul>
+</section>
+
+<section class="card" id="one-en">
+<h2>First: received does not mean correct</h2>
+<p>Below is one real round trip from a WorkBuddy team’s returned files, taken from its audit record (reported as that record states it; the record names the roles differently from this page, which uses the original officer titles; quotation marks here mark key terms and are not word-for-word quotes; we have not independently verified what happened inside the platform). The task is a fictional neighbourhood-map workshop, used only for practice.</p>
+<ol class="tl">
+<li><b>Receipt.</b> The first file sent was the 20-person half-finished draft. The lead acknowledged: version <span class="num">MAP-20-R1</span>, total <span class="num">¥1,349</span>, <span class="num">¥151</span> left, and the open item “nobody is named to collect the tools at the end”. Work had not started. This step only proves both sides are looking at the same file.</li>
+<li><b>Change.</b> Participants went from <span class="num">20</span> to <span class="num">24</span>. The <span class="num">¥1,500</span> budget and <span class="num">14:00–17:00</span> stayed.</li>
+<li><b>Delivery.</b> Production sent <span class="num">MAP-24-R1</span>: <span class="num">6</span> tables, total <span class="num">¥1,464</span>, <span class="num">¥36</span> left, <span class="num">27</span> people in the room against a limit of <span class="num">30</span>.</li>
+<li><b>Returned.</b> The reviewer opened the actual file and still sent it back, for two cells.
+<ul class="plain">
+<li><span class="cell">A4 spare badges</span> R1 told the supplies coordinator to hand over “6 badges”, yet the same R1 says those six sit at the sign-in desk in the floor volunteer’s keeping from 14:00. Filling the sheet as written would give “handed over 0, difference −6”, a loss that never happened. R2 changed the cell to “—” with a note that the volunteer has held them since 14:00 and they are outside this handover.</li>
+<li><span class="cell">C7 spare kit</span> (A3 is the same case) R1 fixed the expected count at “1 kit”, yet the plan allows the volunteer to use one spare kit in round two. After that, the count is 0 and gets booked as a shortage. R2 reads “1 kit if unused / 0 if used; record the table and time”.</li>
+</ul></li>
+<li><b>Only what was named changed.</b> Production fixed just those two problems and the places that had to be brought into line with them, and issued R2 (the record reports 15 changes, including one wording suggestion that was adopted). No amount or quantity moved; <span class="num">¥1,464</span> and <span class="num">¥36</span> stayed. The reviewer reopened R2, <b>recomputed every figure, found them all right</b>, passed it, and the lead delivered it.</li>
+</ol>
+
+<div class="fact"><b>Why two steps.</b> Receipt answers “which version do I hold, and what are the headline numbers?” Review answers “someone opened the real file: can each cell be filled in on site?” In this case every total was right and two cells were still wrong. Checking only receipt, or only totals, would have let both through.</div>
+
+<h3>With any file in hand, ask two questions of each cell</h3>
+<ul class="plain">
+<li>The cell says who should hand over an item. Does that person actually hold it at that moment? (This is A4.)</li>
+<li>If the planned, normal use happens, does the expected number still hold? (This is C7.)</li>
+</ul>
+<p class="hint">These two questions were distilled by the author of this page from the two returns above. They are not wording from the audit record.</p>
+</section>
+
+<section class="card" id="two-en">
+<h2>Second: do the offline exercise, then prepare your half</h2>
+<p>The exercise is <code>try-review.html</code> in the package. When this page sits in the same <code>learn</code> folder, this link opens it: <a href="try-review.html#en">open try-review.html</a>. No network, no account, no model.</p>
+<ol class="steps">
+<li>Open it and press the acknowledge button for R1. This is the “receipt” step above.</li>
+<li>Pick “Spare used”, press “Accept this count”, and read the feedback: in R1 the counted 0 minus the expected 1 is −1, so a legitimate use is written up as a loss. Then press “Return this count” to compare.</li>
+<li>Press “Try the other situation”: the situation switches to “Spare unused” by itself. <b>Press “Accept this count” once more</b>: this time the count matches and the same cell can be signed.</li>
+<li>Only after a verdict does “Open the R1 / R2 comparison” appear (after switching situation, give a verdict again for it to reappear). Open it and read the original C7 and A4 cells.</li>
+</ol>
+<div class="fact">What to take away: for the same cell, the verdict changes when the situation on site changes. So review has to ask about reality, not just add up totals.</div>
+
+<h3>Then prepare your own half of a project (also offline, just text)</h3>
+<p>Write one file in the shape of MAP-20-R1, each part short:</p>
+<ul class="plain">
+<li>A version label, for example <code>MY-V1</code>.</li>
+<li>The conditions that are fixed and must not move.</li>
+<li>The items that may change with headcount or quantity.</li>
+<li>The open to-dos, each with an owner (this is this page’s suggestion).</li>
+</ul>
+<p>When you hand it over, <b>send the file alone first</b>, wait until the other side states the version it read, and only then send the change in <b>a separate message</b>. That is the order used in the case. To whom you hand it and with which tool depends on your own team and accounts, and this page does not cover it: that step is outside this page’s no-account exercise.</p>
+<p>The same package also has a “Start with your drafts” entry (<a href="../start-with-files/index.html#en">open “Start with your drafts”</a>): you open a local page, attach your own drafts, state the task and the acceptance points, and it generates, offline, a project package to hand to the AI tool you use (called the host). Building the package needs no network, no login and no model. Only when you give the project to the host to carry out are that host’s own model, costs and permissions involved, and this page does not go into that.</p>
+<div class="warn">This page promises no result and does not say how to obtain the package. It only helps you know which two things to look at first.</div>
+</section>
+
+<section class="card" id="src-en">
+<h2>Where the numbers come from</h2>
+<table class="en">
+<tr><th>Number on the page</th><th>Source (checked one by one against the originals by the author)</th></tr>
+<tr><td>MAP-20-R1, ¥1,349, ¥151, the open item</td><td>WB audit record, section 2, step 1; the 20-person draft, which states a total of CNY 1,349 and CNY 151 available</td></tr>
+<tr><td>20 → 24 people, ¥1,500, 14:00–17:00</td><td>WB audit record, section 2, step 2; MAP-24-R1, line 16</td></tr>
+<tr><td>6 tables, ¥1,464, ¥36, 27 ≤ 30</td><td>WB MAP-24-R1 section 3.1 (line 73) and 4.2 (lines 129, 143, 146); audit record section 5 (the reviewer’s independent recomputation when reviewing R2; no number moved from R1 to R2)</td></tr>
+<tr><td>A4 expects 6, C7 expects 1 kit</td><td>WB MAP-24-R1 A4 (line 212), C7 (line 237), 4.4 (line 169)</td></tr>
+<tr><td>R2 reports 15 changes, one wording suggestion adopted, no out-of-scope change</td><td>WB audit record, lines 31, 45, 49, 73</td></tr>
+<tr><td>R2 wording</td><td>WB MAP-24-R2 A4 (line 214), C7 (line 241)</td></tr>
+<tr><td>0 − 1 = −1</td><td>the exercise page <a href="try-review.html#en">try-review.html</a> in the same package, exercise feedback</td></tr>
+<tr><td>The “Start with your drafts” entry</td><td>team-candidate entry note “Start here” (the note for the “Start with your drafts” entry in the same package)</td></tr>
+</table>
+<p class="hint">The table above lists sources for the displayed numbers. Quoted-cell translations were prepared for this page.</p>
+</section>
+</div>
+
+</main>
+<footer><span class="zh">首次使用讲解｜发布候选，随产品离线打开，不构成任何保证。案例为虚构练习题，金额单位为人民币元。</span><span class="en">First-use walkthrough · release candidate that opens offline with the product; no guarantee of any kind. The case is a fictional exercise; amounts are in CNY.</span></footer>
+<script>
+'use strict';
+(function(){
+var root=document.documentElement,b=document.getElementById('lang');
+root.classList.add('js');b.hidden=false;
+function set(en){root.classList.toggle('is-en',en);root.lang=en?'en':'zh-CN';b.textContent=en?'中文':'English';document.title=en?'First time here: check these two things':'第一次用，先验哪两件'}
+set(location.hash==='#en');
+b.onclick=function(){set(!root.classList.contains('is-en'))};
+})();
+</script>
+</body></html>

@@ -1,0 +1,509 @@
+{
+  "bundle_version": "bundle.1",
+  "platform": "Open Master Bot",
+  "compatibility_id": "openmaus",
+  "primary_skill": "solo-to-team-openmaus",
+  "primary_version": "0.1.0-rc.5-om.4",
+  "foundation_skills": [
+    "dispatch-accept-verify",
+    "evidence-before-done",
+    "beginner-ops-writing",
+    "ops-case-notes"
+  ],
+  "foundation_mode": "complete directories and resources, read as task materials; not automatically native-installed",
+  "scope": "local candidate; no runtime acceptance claimed",
+  "baseline": "adapter.5 / core rules v2",
+  "original_files": {
+    "foundation/skills/ops-case-notes/SKILL.md": "830e8482e8c9897b0c503968189408660741ad238b462a7e6e556b75ac88b3b2",
+    "foundation/skills/dispatch-accept-verify/SKILL.md": "a7cda747f77ce3b14ad1e4035706e963cb646b7ed5685a9e621985ecd5dc5a15",
+    "foundation/skills/evidence-before-done/SKILL.md": "edad73f663dad6ce66e62d3898f8cdc89b90b5fdd3c241b291dc961d84d738df",
+    "foundation/skills/beginner-ops-writing/SKILL.md": "86f3bbe032855f3d3c31597a1d883d95b31d4fc96722b0e884dd59c70e61625b",
+    "foundation/skills/dispatch-accept-verify/templates/登记行模板.md": "e816df79300b2740452ac8169fcc3203b9838b15645d02888c151ccc379a3054",
+    "platform/给Bot读的安装指令.txt": "2e3cdc3b809116a1d8b4929b7af8ad64d828ec11afbac1dce4c0dad42a1c5a1c",
+    "platform/solo-to-team-openmaus-0.1.0-rc.5-om.4-candidate.zip": "e6ec38d185198c2872e552e7fa95fa1cd69ec8a927bf1d191b28e27f53b312ba",
+    "platform/solo-to-team-openmaus/LICENSE": "5d63ea4387f51228fe2f5d313203c401fad2121e2fbf60354234b92dd2559001",
+    "platform/solo-to-team-openmaus/SKILL.md": "171c09ba58f9569f411736debb15454f54b240d3c5ea544179d03830ab967d18",
+    "platform/solo-to-team-openmaus/references/roles-part-2.md": "c3c5ba16c403ea19879d96d1d3425164512654489b3127c7e572dce0c217f072",
+    "platform/solo-to-team-openmaus/references/roles-part-1.md": "2cef8e86052dae3356d338956b767e2c04ca4b9029cd131905186b01eb62e44a",
+    "platform/solo-to-team-openmaus/references/groups.md": "83444ea78e74d0975c6986c41f3b87007d663bd21c247237adcbfa1f94f97d5e"
+  },
+  "files": {
+    "LICENSE": {
+      "bytes": 1075,
+      "sha256": "5d63ea4387f51228fe2f5d313203c401fad2121e2fbf60354234b92dd2559001"
+    },
+    "NOTICE": {
+      "bytes": 4804,
+      "sha256": "7f7a21647486ce6a4da4b521066e465fdf749faf40573ddc8280e60403d0fe96"
+    },
+    "START-HERE.html": {
+      "bytes": 1849,
+      "sha256": "e6aaec09fae1dd7a1d4986480d8bdab2f5cddfe9d29d9557f4f3bd612804708f"
+    },
+    "START-HERE.md": {
+      "bytes": 2872,
+      "sha256": "d303734c36bfaafcdf5fdfd56450b7024265223c6ab18262a94f05dd644b9ea4"
+    },
+    "TASK-MATERIALS.zip": {
+      "bytes": 452167,
+      "sha256": "9a545e36fb16dab4dd6c06d3e9f8134f1cdaa81b433466c967f1f6491cf1ee0e"
+    },
+    "config/groups.md": {
+      "bytes": 20456,
+      "sha256": "3f5c10e3d1edc6d71596557cf7ee326b7aa8572396f01b2c42ea890820cf9ce5"
+    },
+    "config/role-routing.md": {
+      "bytes": 9099,
+      "sha256": "0e6875f8189371aacc941fabf10c932f7081fb9bfb4bc4424629fedbe72b0462"
+    },
+    "config/roles.md": {
+      "bytes": 27433,
+      "sha256": "f56a523c0e7438c17771ef34c0f31753e3deeaa60f5dddf0a9e7e6ca7d80134f"
+    },
+    "config/team.json": {
+      "bytes": 516386,
+      "sha256": "19fc153b7cc24c01e996a8a304145fdeae4980d6a126f5d21505d052ada5e86f"
+    },
+    "docs/历史平台证据.md": {
+      "bytes": 6773,
+      "sha256": "57392bf4bc72dcc34a3947fae0279c8507f3ca609f3fa5325dc551de8e3ce699"
+    },
+    "docs/配置使用清单.csv": {
+      "bytes": 2263,
+      "sha256": "b91263b8fc5a18dcd57fd22c2f4864d232d8c2d47247237cc46555b11ecee9ec"
+    },
+    "docs/配置使用清单.md": {
+      "bytes": 4171,
+      "sha256": "c53058d48ba37bc55501dd3c2c37f92e90ce1ec9d3db3b0fd6701912f876b10d"
+    },
+    "docs/采用与退出.md": {
+      "bytes": 1992,
+      "sha256": "49168995b1cfb0e3d6cf6d1fb545ed6de83e1c9d3384d8112b27d1289b76bd4c"
+    },
+    "docs/首次使用检查.md": {
+      "bytes": 1623,
+      "sha256": "6a8bcb862c18b0964e4aeba19508a2085f433fa5591c9466d8f5f5cdf42d6b12"
+    },
+    "docs/验证范围.md": {
+      "bytes": 1101,
+      "sha256": "47a031321b5e05ff99757f22dcbe51ec280092b0af27753ec87872cdf07c0dfe"
+    },
+    "foundation/LICENSE": {
+      "bytes": 1075,
+      "sha256": "5d63ea4387f51228fe2f5d313203c401fad2121e2fbf60354234b92dd2559001"
+    },
+    "foundation/NOTICE": {
+      "bytes": 1732,
+      "sha256": "2479828705968359259bbe2637fe43f8ed0d46f477e48b6b94498c634e02f5e8"
+    },
+    "foundation/README.en.md": {
+      "bytes": 337,
+      "sha256": "9cad8e146200330a60038e17ff13bb8218c2a008e0dabb3c46f76ac75007ebae"
+    },
+    "foundation/README.md": {
+      "bytes": 2841,
+      "sha256": "2abe2ed2f2a1df1b74925db6e7a8ad16c81b3aac6a88c42ae3f059cc17f3557e"
+    },
+    "foundation/examples/README.md": {
+      "bytes": 9347,
+      "sha256": "e9c09c310d37d281d0feb284f856576104e5fef6e05a7ce293909bd706092b5e"
+    },
+    "foundation/examples/walkthrough-meeting-notes/README.en.md": {
+      "bytes": 9890,
+      "sha256": "ff2b93b0b8cfaef2f5758c78d8a286d283d8274585602e449c84b4dc06e452c3"
+    },
+    "foundation/examples/walkthrough-meeting-notes/README.md": {
+      "bytes": 5302,
+      "sha256": "8b305776fc6015ad17e40848ba5939eff4a421d1df46b40fe5a5894fddb43d3e"
+    },
+    "foundation/examples/walkthrough-meeting-notes/input.md": {
+      "bytes": 942,
+      "sha256": "c00234be24dcfa65e5e2522bc41c4b4a52d52d488feb5aba6bcd8c1677a793aa"
+    },
+    "foundation/examples/walkthrough-meeting-notes/output-missing.md": {
+      "bytes": 392,
+      "sha256": "52312b389eb331fb00693411dfd700d9422441570f10125940a137bb94f49dd3"
+    },
+    "foundation/examples/walkthrough-meeting-notes/output-ok.md": {
+      "bytes": 529,
+      "sha256": "e22e90d680af6564dca85830060a77faf7f16e6ab05f84977c6b20750c348923"
+    },
+    "foundation/examples/walkthrough-meeting-notes/register-lines.md": {
+      "bytes": 3313,
+      "sha256": "b67fb2d5515cb532ebce40280655853c2549b7af1aab52d71fd00f7991af78e0"
+    },
+    "foundation/skills/beginner-ops-writing/SKILL.md": {
+      "bytes": 10139,
+      "sha256": "86f3bbe032855f3d3c31597a1d883d95b31d4fc96722b0e884dd59c70e61625b"
+    },
+    "foundation/skills/dispatch-accept-verify/SKILL.md": {
+      "bytes": 12343,
+      "sha256": "a7cda747f77ce3b14ad1e4035706e963cb646b7ed5685a9e621985ecd5dc5a15"
+    },
+    "foundation/skills/dispatch-accept-verify/templates/登记行模板.md": {
+      "bytes": 6204,
+      "sha256": "e816df79300b2740452ac8169fcc3203b9838b15645d02888c151ccc379a3054"
+    },
+    "foundation/skills/evidence-before-done/SKILL.md": {
+      "bytes": 12043,
+      "sha256": "edad73f663dad6ce66e62d3898f8cdc89b90b5fdd3c241b291dc961d84d738df"
+    },
+    "foundation/skills/ops-case-notes/SKILL.md": {
+      "bytes": 12530,
+      "sha256": "830e8482e8c9897b0c503968189408660741ad238b462a7e6e556b75ac88b3b2"
+    },
+    "foundation/templates/task-register-line.md": {
+      "bytes": 6238,
+      "sha256": "d824d09f631e7d3c022c014a4467fbe968f3a304e616aaf6da553a1d9652cc47"
+    },
+    "platform/solo-to-team-openmaus/LICENSE": {
+      "bytes": 1075,
+      "sha256": "5d63ea4387f51228fe2f5d313203c401fad2121e2fbf60354234b92dd2559001"
+    },
+    "platform/solo-to-team-openmaus/SKILL.md": {
+      "bytes": 24269,
+      "sha256": "171c09ba58f9569f411736debb15454f54b240d3c5ea544179d03830ab967d18"
+    },
+    "platform/solo-to-team-openmaus/references/groups.md": {
+      "bytes": 20454,
+      "sha256": "83444ea78e74d0975c6986c41f3b87007d663bd21c247237adcbfa1f94f97d5e"
+    },
+    "platform/solo-to-team-openmaus/references/roles-part-1.md": {
+      "bytes": 20308,
+      "sha256": "2cef8e86052dae3356d338956b767e2c04ca4b9029cd131905186b01eb62e44a"
+    },
+    "platform/solo-to-team-openmaus/references/roles-part-2.md": {
+      "bytes": 21547,
+      "sha256": "c3c5ba16c403ea19879d96d1d3425164512654489b3127c7e572dce0c217f072"
+    },
+    "platform/solo-to-team-openmaus-0.1.0-rc.5-om.4-candidate.zip": {
+      "bytes": 88449,
+      "sha256": "e6ec38d185198c2872e552e7fa95fa1cd69ec8a927bf1d191b28e27f53b312ba"
+    },
+    "platform/开始使用.md": {
+      "bytes": 4814,
+      "sha256": "7f0337315e6a53ca238f3f031dac9deb2e9c0cefe20d7f71efe6ebb345dc047e"
+    },
+    "platform/给Bot读的安装指令.txt": {
+      "bytes": 3459,
+      "sha256": "2e3cdc3b809116a1d8b4929b7af8ad64d828ec11afbac1dce4c0dad42a1c5a1c"
+    },
+    "tools/NOTICE": {
+      "bytes": 4804,
+      "sha256": "7f7a21647486ce6a4da4b521066e465fdf749faf40573ddc8280e60403d0fe96"
+    },
+    "tools/resume/README.en.md": {
+      "bytes": 3910,
+      "sha256": "eee11d805605531a0b934207b0fe79ce73fcabc9004cb719fe7baa0f246bb66c"
+    },
+    "tools/resume/checkpoint.json": {
+      "bytes": 463,
+      "sha256": "0a23311c5f8aec6e637f9a6f71919393f3cd2efb93479d561bbac3ed60e00cf7"
+    },
+    "tools/resume/resume-core.js": {
+      "bytes": 11380,
+      "sha256": "a7aba8960f43ae60d78158b71e0530580b92031fcfa2c6a0e49ea3ae65f99aca"
+    },
+    "tools/resume/resume-i18n.js": {
+      "bytes": 13054,
+      "sha256": "25420fe3016269faf25ab8dfc7f21b8befbe4f4f21471eb4b30737f1e0e75744"
+    },
+    "tools/resume/从这里续办.html": {
+      "bytes": 18681,
+      "sha256": "3916b7af8613651c3fbe96b827318ad56e77f03d8b367d0a3f887d2b40324d1f"
+    },
+    "tools/resume/开工与换会话.md": {
+      "bytes": 5241,
+      "sha256": "9bc0886010babffc85dd98a0a4962e102ed8fe636888fff6c5282550bd12cc5c"
+    },
+    "tools/team-16/README.md": {
+      "bytes": 7278,
+      "sha256": "5c060cd1f10a83d1ba10034595e3bf9781ea12aadf36e0e108b5f38ed15138c5"
+    },
+    "tools/team-16/SETUP.en.md": {
+      "bytes": 8597,
+      "sha256": "480ee778d61ab656552d360fe651e5b8726a9a9f256b869f1b7641b635d64bb7"
+    },
+    "tools/team-16/SETUP.zh.md": {
+      "bytes": 7393,
+      "sha256": "d80f045c32ab8a5281cf0327385c28bc3dc8a0b4d4247af47527a4a1871001e3"
+    },
+    "tools/team-16/VERIFICATION.en.md": {
+      "bytes": 19702,
+      "sha256": "13eef783b6528cc2c4662324be999a788be75b1fcaf3dcee52423097c642ff50"
+    },
+    "tools/team-16/VERIFICATION.zh.md": {
+      "bytes": 14497,
+      "sha256": "213e5b87e17b92749db3595ca9960a9445a950930c53e0978302a09a0735bca6"
+    },
+    "tools/team-16/index.html": {
+      "bytes": 1355895,
+      "sha256": "6b0f92edc2c80e61d998ca974a1579e6f82c995f711d80b70fa94c4e043df1ec"
+    },
+    "tools/team-16/rules/groups.en.md": {
+      "bytes": 24877,
+      "sha256": "328fa66389461cfacbbc687b03f663e298b2267d9353f29baaf65798ed18be3d"
+    },
+    "tools/team-16/rules/groups.zh.md": {
+      "bytes": 20454,
+      "sha256": "83444ea78e74d0975c6986c41f3b87007d663bd21c247237adcbfa1f94f97d5e"
+    },
+    "tools/team-16/source/assets/icons/production.png": {
+      "bytes": 15341,
+      "sha256": "f784f80784c394e909751754fa087fb233972f413ea5ef414d2be4fd774dee42"
+    },
+    "tools/team-16/source/assets/icons/review.png": {
+      "bytes": 24948,
+      "sha256": "a6f94f07efc4b7059596e06756d33af45f7fc8db78954c7445334ec2bd0ac42b"
+    },
+    "tools/team-16/source/assets/icons/team-lead.png": {
+      "bytes": 31103,
+      "sha256": "65f639a657e1610acb2c7a21c04257bc6943770fbab654ee7c6033582968e2ec"
+    },
+    "tools/team-16/source/assets/icons/team.png": {
+      "bytes": 14328,
+      "sha256": "9ceb6d41b2ebb6ee57255d2819fd5e346143aec848451eb44b0a630a8c0b581b"
+    },
+    "tools/team-16/source/assets/role-icons/seat-analysis-specialist.png": {
+      "bytes": 15814,
+      "sha256": "f1f8662f5d17915ce1ac246c9e62270939ab38d46482f408125cc9979fc28c35"
+    },
+    "tools/team-16/source/assets/role-icons/seat-art-editor.png": {
+      "bytes": 21153,
+      "sha256": "2004fbd64ca44f01c48eeb757e0e08b11ed0592c30a3c2d8ba39dd3015ad5e3a"
+    },
+    "tools/team-16/source/assets/role-icons/seat-chief.png": {
+      "bytes": 31103,
+      "sha256": "65f639a657e1610acb2c7a21c04257bc6943770fbab654ee7c6033582968e2ec"
+    },
+    "tools/team-16/source/assets/role-icons/seat-creative.png": {
+      "bytes": 19923,
+      "sha256": "19929254c9a550a9db062757996c8e7506e1e1bf607b565cf9ed150151d62e33"
+    },
+    "tools/team-16/source/assets/role-icons/seat-daily-affairs.png": {
+      "bytes": 15983,
+      "sha256": "31c2aa123e2565bdcc8eed1f7fdcd2a02e33bb33d75afdfe899122bdbb9a8b2d"
+    },
+    "tools/team-16/source/assets/role-icons/seat-implementation-engineer.png": {
+      "bytes": 13660,
+      "sha256": "c0a2a45a88e32a813f4dd147a804eb8875aaffef0b44de778f7c17a9bbd0df33"
+    },
+    "tools/team-16/source/assets/role-icons/seat-inspection.png": {
+      "bytes": 24277,
+      "sha256": "61c02cf25ff0b065aed3df080c0a9d3ea0dc8ff493fad4a85efb54d8a3131ea1"
+    },
+    "tools/team-16/source/assets/role-icons/seat-intelligence-adviser.png": {
+      "bytes": 26042,
+      "sha256": "b38959b3431f8f4f6845fbd8776ce422439e23f27e95e6e2c7f06344eb3ef588"
+    },
+    "tools/team-16/source/assets/role-icons/seat-intelligence.png": {
+      "bytes": 40676,
+      "sha256": "d60551c0f2ebbb2284ed8249a52292273d79d2d3255093ab1f143fa5deeade50"
+    },
+    "tools/team-16/source/assets/role-icons/seat-learning.png": {
+      "bytes": 20109,
+      "sha256": "b3a1c62de00de6765c02fd7abe26d3a8cf4762aa7e54470730ecd62da9694d22"
+    },
+    "tools/team-16/source/assets/role-icons/seat-legal-business.png": {
+      "bytes": 16353,
+      "sha256": "d32818e9ea4565266eb9d7f6411e131ac30723f40eaa2210043c3d47ad444e34"
+    },
+    "tools/team-16/source/assets/role-icons/seat-network-engineer.png": {
+      "bytes": 26778,
+      "sha256": "875ca69936247e7dde1992dc3fb6da26f39d784bdd2f51680eacba06ab164300"
+    },
+    "tools/team-16/source/assets/role-icons/seat-production.png": {
+      "bytes": 15341,
+      "sha256": "f784f80784c394e909751754fa087fb233972f413ea5ef414d2be4fd774dee42"
+    },
+    "tools/team-16/source/assets/role-icons/seat-review-assistant.png": {
+      "bytes": 16382,
+      "sha256": "cdcedd2782ad049ea3950cae7fc5fda431f446c89749fcd075a5e661034848f6"
+    },
+    "tools/team-16/source/assets/role-icons/seat-review.png": {
+      "bytes": 24948,
+      "sha256": "a6f94f07efc4b7059596e06756d33af45f7fc8db78954c7445334ec2bd0ac42b"
+    },
+    "tools/team-16/source/assets/role-icons/seat-technology.png": {
+      "bytes": 25017,
+      "sha256": "d825974b918647b2d8ccda2b0ee45d7622f94199b14128a4dfe8f29505b8704b"
+    },
+    "tools/team-16/source/assets/workbuddy.json": {
+      "bytes": 1462,
+      "sha256": "7cc53510bbee2e1a2bd0176c3377356fc2d91a78a3555be5f308fbe190de042f"
+    },
+    "tools/team-16/source/build.mjs": {
+      "bytes": 6132,
+      "sha256": "d155bc5a519bf6cfc103ccf4835e8f01c183407380229c345fe8a5c59a6f8fff"
+    },
+    "tools/team-16/source/presets/groups.en.md": {
+      "bytes": 24877,
+      "sha256": "328fa66389461cfacbbc687b03f663e298b2267d9353f29baaf65798ed18be3d"
+    },
+    "tools/team-16/source/presets/groups.zh.md": {
+      "bytes": 20454,
+      "sha256": "83444ea78e74d0975c6986c41f3b87007d663bd21c247237adcbfa1f94f97d5e"
+    },
+    "tools/team-16/source/presets/team.en.json": {
+      "bytes": 529813,
+      "sha256": "3a5b0721ffbae526471d59a91256082083d3be3ae4654d3a9ac3f5b2ed6b7a49"
+    },
+    "tools/team-16/source/presets/team.zh.json": {
+      "bytes": 516386,
+      "sha256": "19fc153b7cc24c01e996a8a304145fdeae4980d6a126f5d21505d052ada5e86f"
+    },
+    "tools/team-16/source/web/adapters.js": {
+      "bytes": 18464,
+      "sha256": "8387e565adb88fa3ce5f5e063029755ea55caed0921fe791465c5651c344eec7"
+    },
+    "tools/team-16/source/web/app.js": {
+      "bytes": 24462,
+      "sha256": "7b671ab571267812c35dffcd97d7d8eb9e39ec392da0ce0d977ce2f96704c4c8"
+    },
+    "tools/team-16/source/web/builder.css": {
+      "bytes": 7095,
+      "sha256": "7dddeb2f1940e3e8cb580af5c709ba7f55a445a96fe971dfbe00f17de8370822"
+    },
+    "tools/team-16/source/web/core.js": {
+      "bytes": 11987,
+      "sha256": "46660b2582344c1309f5d77428f117ac198977d434685b7636fbe8404a1fb080"
+    },
+    "tools/team-16/source/web/ds-panel.js": {
+      "bytes": 10947,
+      "sha256": "9a1a8d48dd56f1493b10de8a0c52a381f4459fb016de54925c908d556197c542"
+    },
+    "tools/team-16/source/web/ds-planner.js": {
+      "bytes": 12372,
+      "sha256": "e01047fd6d47644c61190d8ad57ef63227380ad7d88665c8aa44ed3819e31953"
+    },
+    "tools/team-16/source/web/ds-runbook.js": {
+      "bytes": 8488,
+      "sha256": "5fa8f67dc5259f7ff8bd9705fa554ffb4529c254e5ae5afd01c988a8508f83fd"
+    },
+    "tools/team-16/source/web/focus-retention.js": {
+      "bytes": 2399,
+      "sha256": "06a25a5000878e4ef799058ac4a1cc57a17e6f78039a315ec308c3105a4d2095"
+    },
+    "tools/team-16/source/web/grok-plan.js": {
+      "bytes": 8169,
+      "sha256": "2dea65307ffcaff1e7e18741eab5a29195c9bae6b1b0de8fff2032304e66820c"
+    },
+    "tools/team-16/source/web/hosts.js": {
+      "bytes": 19905,
+      "sha256": "5d4e4d732c44a08e74aede2d2b6058138ac81daafe26953c37980a5c1d0ab03c"
+    },
+    "tools/team-16/source/web/index.html": {
+      "bytes": 5052,
+      "sha256": "33e35cd190750b26b3ae8ff3ac9c26fa8a81536f9626eb7861cefe29af2b32fc"
+    },
+    "tools/team-16/source/web/role-mentions.js": {
+      "bytes": 1776,
+      "sha256": "f192d732dedd2cb3d7351986e7d14f722bf8a0fe80d56f8a284d6b698416c596"
+    },
+    "tools/team-16/source/web/rooms.js": {
+      "bytes": 2591,
+      "sha256": "80112535741ce06f59f4614429e1f40b46decc94f0003d2a2aeed4a6513e7707"
+    },
+    "tools/team-16/source/web/template.js.in": {
+      "bytes": 62,
+      "sha256": "61e1ad548f4e0da536e7271e68d501a4c9ea7c262bee1a4736537d14e0f0623c"
+    },
+    "tools/team-16/source/web/workbuddy.js": {
+      "bytes": 13385,
+      "sha256": "d4983e8417434d3c1b6713274387745f2425d407cdb068d12c86fc4e0d17adae"
+    },
+    "tools/team-16/source/web/zip-store.js": {
+      "bytes": 2479,
+      "sha256": "c74a7e4f0f4b8577bf59c87ffbc6142d00b3bc61051f40548baa97641dbe7f9e"
+    },
+    "tools/team-16/tests/adapter-semantics.test.mjs": {
+      "bytes": 11224,
+      "sha256": "6b4c06f7a2bc3aeb2af8ae477e538f1f504465c9df88a647f01cc383d86675d9"
+    },
+    "tools/team-16/tests/body-preservation.test.mjs": {
+      "bytes": 1727,
+      "sha256": "167a2b82910b6cde535a51e5f3c46ea6fc2324a1964582a35740367e87f3d278"
+    },
+    "tools/team-16/tests/fixtures/adapter-semantics-before-custom-groups.patch": {
+      "bytes": 29803,
+      "sha256": "f5f63b469e705a9fd1d6a4d9cd1a13da5e90edbe3008071d8213ef01668d002c"
+    },
+    "tools/team-16/tests/fixtures/adapter-semantics.patch": {
+      "bytes": 31236,
+      "sha256": "de927647e295cb04f4ed003c8b83b6b18686c4be9021724b0ffd40c2a9b4e982"
+    },
+    "tools/team-16/tests/fixtures/body-preservation.patch": {
+      "bytes": 2283,
+      "sha256": "b08bb99dcbc92bf82ed2b3d00e9a41009b4c527336a38bc3668d0b7a1af57ea2"
+    },
+    "tools/team-16/tests/fixtures/focus-and-selection.patch": {
+      "bytes": 17370,
+      "sha256": "7f5319e69720b0a04c4547953ec86d5c244aa4ba31966652d38c120b7bc2ffbf"
+    },
+    "tools/team-16/tests/fixtures/frozen-modules.json": {
+      "bytes": 855,
+      "sha256": "cd74796a5b17f2cd78bea522ed879aacbaa43bf18c11d371487c080fdfef13e8"
+    },
+    "tools/team-16/tests/fixtures/grok-startup-disclosure.v2.patch": {
+      "bytes": 8233,
+      "sha256": "98658d13af9bb000e2f99d0128cc472ac81d8f4bceb3fe2db1228bd13f6d8c28"
+    },
+    "tools/team-16/tests/fixtures/input-and-role-mentions.patch": {
+      "bytes": 4276,
+      "sha256": "2bf613ca5213c3fb3bf460a19a6cc0b4ea89cdb03f305b35874318dd571f64e9"
+    },
+    "tools/team-16/tests/fixtures/input-typography.patch": {
+      "bytes": 3875,
+      "sha256": "a9d76eb752c8b8e394afe49bce535386cce7c29f13fa536b9b5b1c540f54860f"
+    },
+    "tools/team-16/tests/fixtures/known-patches.json": {
+      "bytes": 6246,
+      "sha256": "8e60f021c738b08eb9eafd3f4a378dab70b59b15c832e1f0946b4ce948e1ec04"
+    },
+    "tools/team-16/tests/fixtures/openmaus-approval-guidance.patch": {
+      "bytes": 5584,
+      "sha256": "1d9a11c1e0d5183351be8ba3072c70ace843842ddf3e33524e8151b46d76ed12"
+    },
+    "tools/team-16/tests/fixtures/openmaus-final-size.patch": {
+      "bytes": 1681,
+      "sha256": "91cdff9bcb2dbbae1302dfcbdbc6d4588dbc89c9ac118d8db4c9f2ca81591c6f"
+    },
+    "tools/team-16/tests/fixtures/roster-lock.json": {
+      "bytes": 2589,
+      "sha256": "d32de9ae177be4c5f61d177b59b299b2b7d3f6b0508ea344c62ede8f757a39ea"
+    },
+    "tools/team-16/tests/focus-dom-helper.mjs": {
+      "bytes": 12102,
+      "sha256": "0344384a1ac71bdadc0bf50e2589904d2f461dc5955e6f591d715ab55d4ec287"
+    },
+    "tools/team-16/tests/focus-preservation.test.mjs": {
+      "bytes": 12805,
+      "sha256": "70bebfcffa70c9351a613f9cdd0d018f1eb5c74000b036fdcfeb6cf2dc42f80b"
+    },
+    "tools/team-16/tests/openmaus-size-limit.test.mjs": {
+      "bytes": 7271,
+      "sha256": "8fd893cb04c3c2bd34ee58cd1ba6e8d07e72cd32131d10efaac040dd5a8c8c78"
+    },
+    "tools/team-16/tests/role-mentions.test.mjs": {
+      "bytes": 10456,
+      "sha256": "386f7fd183f8d69e416cfe184f98cdefda7d8745247de1835838068c94c45d91"
+    },
+    "tools/team-16/tests/rule-references.test.mjs": {
+      "bytes": 1229,
+      "sha256": "778c3997eb8516cffaf61df9e73791d91684fca83281fe13cef7f0404917fac0"
+    },
+    "tools/team-16/tests/team16.test.mjs": {
+      "bytes": 11636,
+      "sha256": "ccc3bc436f14aa5f3a4fbf208836507a44d6024c83c26687ccedf80000dc5913"
+    },
+    "开工文本.txt": {
+      "bytes": 1094,
+      "sha256": "38db51a625623c283672234004dac6d0272ad49c375db27419c1a518223dade3"
+    },
+    "开工读取指引.md": {
+      "bytes": 1186,
+      "sha256": "4e9d166b63bbacfe40ef7849c663f1f8fdac01b3c08dca32253f37182c7ba06e"
+    }
+  },
+  "manifest_self_excluded": true
+}

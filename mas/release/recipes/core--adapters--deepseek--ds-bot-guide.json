@@ -1,0 +1,106 @@
+{
+  "format": "mas-zip-layout-v1",
+  "sha256": "ba8e7b4a2e43e86c08080e3b99877ad7d28917ed5592db25e487972e16a11ceb",
+  "members": [
+    {
+      "name": "DSBot引导包/开工入口.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        34,
+        14
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 25165824,
+      "internal": 0,
+      "sha256": "c34bdc9df2d1ced1d41a5ed2767ee64a81dd6a8be9c9a21ff6d019ca5415787e",
+      "source": "mas/release/payload/components/core/adapters/deepseek/ds-bot-guide/DSBot引导包/开工入口.md",
+      "level": 6
+    },
+    {
+      "name": "DSBot引导包/manifest.json",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        34,
+        14
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 25165824,
+      "internal": 0,
+      "sha256": "c62463fcf36d62f3b8cb243f93df5c4efa16f3950328c1972cf5580123110714",
+      "source": "mas/release/payload/components/core/adapters/deepseek/ds-bot-guide/DSBot引导包/manifest.json",
+      "level": 6
+    },
+    {
+      "name": "DSBot引导包/avatars/team-lead.png",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        34,
+        14
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 25165824,
+      "internal": 0,
+      "sha256": "65f639a657e1610acb2c7a21c04257bc6943770fbab654ee7c6033582968e2ec",
+      "source": "mas/source/assets/icons/team-lead.png",
+      "level": 6
+    },
+    {
+      "name": "DSBot引导包/avatars/production.png",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        34,
+        14
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 25165824,
+      "internal": 0,
+      "sha256": "f784f80784c394e909751754fa087fb233972f413ea5ef414d2be4fd774dee42",
+      "source": "mas/source/assets/icons/production.png",
+      "level": 6
+    },
+    {
+      "name": "DSBot引导包/avatars/review.png",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        34,
+        14
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 25165824,
+      "internal": 0,
+      "sha256": "a6f94f07efc4b7059596e06756d33af45f7fc8db78954c7445334ec2bd0ac42b",
+      "source": "mas/source/assets/icons/review.png",
+      "level": 6
+    }
+  ]
+}

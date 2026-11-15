@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>陶艺展签 · 排印样稿 v1（横向 A6）</title>
+<style>
+  /* ===== 基础 ===== */
+  :root{
+    --ink:#1c1a17;
+    --ink-soft:#4a443c;
+    --label:#8c7f6d;
+    --rule:#cbbfa9;
+    --rule-soft:#e7e0d3;
+    --serif:"Songti SC","Noto Serif SC","Source Han Serif SC","STSong","SimSun",serif;
+    --sans:"PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;
+  }
+
+  html{ -webkit-text-size-adjust:100%; }
+
+  body{
+    margin:0;
+    padding:9mm 0 12mm;
+    background:#e7e3dc;
+    color:var(--ink);
+    font-family:var(--serif);
+    text-rendering:optimizeLegibility;
+  }
+
+  /* ===== 屏上提示（打印时隐藏） ===== */
+  .hint{
+    box-sizing:border-box;
+    width:148mm;
+    margin:0 auto 8mm;
+    padding:3mm 4mm;
+    background:#fbf9f4;
+    border:0.2mm solid var(--rule-soft);
+    border-left:1.2mm solid var(--rule);
+    font-family:var(--sans);
+    font-size:9.5pt;
+    line-height:1.65;
+    color:var(--ink-soft);
+  }
+  .hint b{ color:var(--ink); font-weight:600; }
+
+  /* ===== 单张展签：横向 A6 = 148mm × 105mm ===== */
+  .sheet{
+    box-sizing:border-box;
+    position:relative;
+    width:148mm;
+    height:104.9mm;
+    margin:0 auto 10mm;
+    padding:12mm 17mm;
+    background:#fff;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    box-shadow:0 1.2mm 4mm rgba(0,0,0,.20), 0 0 0 0.2mm rgba(0,0,0,.06);
+  }
+
+  .sheet .title{
+    margin:0;
+    font-family:var(--serif);
+    font-size:15mm;
+    line-height:1.12;
+    font-weight:600;
+    letter-spacing:.06em;
+    color:var(--ink);
+  }
+
+  .sheet .rule{
+    width:26mm;
+    height:0.5mm;
+    margin:6mm 0 6.5mm;
+    background:var(--rule);
+  }
+
+  .sheet dl{
+    margin:0;
+    font-family:var(--sans);
+  }
+
+  .sheet .row{
+    display:flex;
+    align-items:baseline;
+    padding:2.9mm 0;
+    border-bottom:0.2mm solid var(--rule-soft);
+  }
+  .sheet .row:last-child{ border-bottom:0; padding-bottom:0; }
+
+  .sheet dt{
+    flex:0 0 20mm;
+    font-size:7.6pt;
+    line-height:1.4;
+    letter-spacing:.24em;
+    color:var(--label);
+  }
+
+  .sheet dd{
+    margin:0;
+    font-family:var(--serif);
+    font-size:5.4mm;
+    line-height:1.35;
+    letter-spacing:.04em;
+    color:var(--ink);
+  }
+
+  /* ===== 打印：A6 横向、零页边距、每张一页 ===== */
+  @page{
+    size:148mm 105mm;   /* 横向 A6；等价于 size:A6 landscape */
+    margin:0;
+  }
+
+  @media print{
+    html, body{
+      margin:0;
+      padding:0;
+      background:#fff;
+    }
+    .hint{ display:none !important; }
+
+    .sheet{
+      margin:0;
+      box-shadow:none;
+      border:0;
+      break-inside:avoid;
+      page-break-inside:avoid;
+      -webkit-print-color-adjust:exact;
+      print-color-adjust:exact;
+    }
+    /* 只在非末张强分页，避免末尾多出空白页 */
+    .sheet:not(:last-of-type){
+      break-after:page;
+      page-break-after:always;
+    }
+    .sheet:last-of-type{
+      break-after:auto;
+      page-break-after:auto;
+    }
+  }
+</style>
+</head>
+<body>
+
+<p class="hint"><b>打印提示（仅屏上显示）</b>：纸张选 A6 或 148×105 mm、方向横向、缩放 100%、页边距设为无；屏上灰底与页影不会打印。共 3 张，顺序依次为 1→2→3。</p>
+
+<!-- 第 1 张 -->
+<section class="sheet" aria-label="展签 第 1 张">
+  <h1 class="title">未落</h1>
+  <div class="rule" role="presentation"></div>
+  <dl>
+    <div class="row"><dt>署名</dt><dd>白雨工作组</dd></div>
+    <div class="row"><dt>材料</dt><dd>白瓷</dd></div>
+    <div class="row"><dt>创作年</dt><dd>2026</dd></div>
+  </dl>
+</section>
+
+<!-- 第 2 张 -->
+<section class="sheet" aria-label="展签 第 2 张">
+  <h1 class="title">潮线</h1>
+  <div class="rule" role="presentation"></div>
+  <dl>
+    <div class="row"><dt>署名</dt><dd>栖石工作组</dd></div>
+    <div class="row"><dt>材料</dt><dd>黑陶</dd></div>
+    <div class="row"><dt>创作年</dt><dd>2025</dd></div>
+  </dl>
+</section>
+
+<!-- 第 3 张 -->
+<section class="sheet" aria-label="展签 第 3 张">
+  <h1 class="title">窑心</h1>
+  <div class="rule" role="presentation"></div>
+  <dl>
+    <div class="row"><dt>署名</dt><dd>青岚工作组</dd></div>
+    <div class="row"><dt>材料</dt><dd>青瓷</dd></div>
+    <div class="row"><dt>创作年</dt><dd>2024</dd></div>
+  </dl>
+</section>
+
+</body>
+</html>

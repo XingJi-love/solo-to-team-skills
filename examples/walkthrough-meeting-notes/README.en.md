@@ -12,11 +12,12 @@ Status words used below (the skill and template texts are in Chinese; the Chines
 |---|---|---|
 | pending (待收) | Handed out, nobody has confirmed taking it yet | Yes |
 | taken (已接单) | The worker confirmed taking the job; **no result yet** | Yes |
-| result received (已收到成果) | The deliverable is at the agreed place and you saw it; **not checked yet** | Yes (to check) |
-| accepted (已验收) | Checked with `evidence-before-done`; can be passed on or closed | **No** |
+| result received (已收到成果) | Deliverable seen at the agreed place; either awaiting verification or verified but awaiting an authorized decision | Yes |
+| sent back (退回) | Corrections requested; awaiting resubmission | Yes |
+| accepted (已验收) | Verification passed and an authorized person accepted it; record the acceptor and decision or prior authority | **No** |
 | cancelled (已取消) | Someone with authority said "don't do it" | **No** |
 
-Extra lines that never take a task off the open list: **extend** (续期), **escalate** (升级), **sent back** (退回). Only append lines; never overwrite earlier ones. Every line starts with the same task ID.
+Find the latest valid task stage for the same task ID, rather than filtering by the last physical line. **Start requested** (叫开工), **extend** (续期) and **escalate** (升级) are events and do not replace that stage, even when repeated. A start request with no reply stays pending; after a clear acceptance of the assignment or work-start evidence, append "taken". "Sent back" is a stage awaiting resubmission. Roll calls do not change a task stage; keep an unrecognized line for clarification without closing the task. Later event notes do not reopen accepted or authorized-cancelled work; use a new task ID and register pending for every new job or new round; never reuse the old ID. Resubmissions within the same unfinished job keep its ID. A late acceptance or event note for an old ID belongs only to that job and does not change the new one’s stage. Only append; never overwrite earlier lines.
 
 ## Step 0: prepare
 
@@ -133,10 +134,12 @@ Check each item of Step 1:
 
 ## Step 6: decide
 
+Here "you/me" is the requester who verifies and decides acceptance. An assistant authorized only to check must keep "result received — verification passed, awaiting an authorized decision" open. An assistant with explicit, applicable prior acceptance authority may accept directly without asking again. Self-checking does not replace independent review required by the task, and acceptance does not grant publication or other unrelated permissions.
+
 **Branch A — accept:**
 
 ```
-accepted | ID: M-01 | time: 14:41 | checked by: me | how (one line): opened the file and checked it against input.md: decisions 3/3, action items 3/3 with names and dates, office move listed as not decided | hand to / close: close
+accepted | ID: M-01 | time: 14:41 | checked by: me | how (one line): opened the file and checked it against input.md: decisions 3/3, action items 3/3 with names and dates, office move listed as not decided | accepted by: me | decision / prior authority: requester’s own acceptance | hand to / close: close
 ```
 
 Only now does M-01 leave the open list.
@@ -147,7 +150,7 @@ Only now does M-01 leave the open list.
 sent back | ID: M-01 | time: 14:40 | what is missing / wrong: (1) action item "Xu | one page of short-video numbers | Nov 11" missing; (2) "move office next month" was not decided, cannot be a decision | worker told?: yes | new due: 15:00
 extend | ID: M-01 | original due: 14:30 (kept) | new due: 15:00 | reason: sent back to fix two items | still collected by: me
 result received | ID: M-01 | time: 14:58 | where: notes/meeting.md | agreed place?: yes | to check
-accepted | ID: M-01 | time: 15:03 | checked by: me | how (one line): re-checked only the two changed sections (Decisions, Action items); the rest is word-for-word the version checked at 14:40, so that check is reused | hand to / close: close
+accepted | ID: M-01 | time: 15:03 | checked by: me | how (one line): re-checked only the two changed sections (Decisions, Action items); the rest is word-for-word the version checked at 14:40, so that check is reused | accepted by: me | decision / prior authority: requester’s own acceptance | hand to / close: close
 ```
 
 From "sent back" until the final "accepted", M-01 stays on the open list. Note the re-check: only the changed parts are checked again; parts unchanged since a valid check are reused. A worker's own "fixed it" is a lead, not an independent check.

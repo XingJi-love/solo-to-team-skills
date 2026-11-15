@@ -1,0 +1,3 @@
+# Keep display-only team avatars out of git archive output.
+mas/showcase/avatars export-ignore
+mas/showcase/avatars/** export-ignore

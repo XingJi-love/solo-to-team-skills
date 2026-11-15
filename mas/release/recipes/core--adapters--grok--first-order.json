@@ -1,0 +1,146 @@
+{
+  "format": "mas-zip-layout-v1",
+  "sha256": "7be911a41d94fec4273ba1a834144f3afdff028ad2c6e2cdf813e34290f48f09",
+  "members": [
+    {
+      "name": "index.html",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        10,
+        40,
+        42
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "734e88615fbd3e4a6365c5d7b86f298f7ae72eeb4006f23d08cefafe9107fc7b",
+      "source": "mas/release/payload/components/core/adapters/grok/first-order/index.html",
+      "level": 6
+    },
+    {
+      "name": "start-en.html",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        10,
+        40,
+        42
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "66155bb6eea6b6642214c7c52cbeb124dd25fa86f3f9de5cd82530ec1becfc6d",
+      "source": "mas/release/payload/components/core/adapters/grok/first-order/start-en.html",
+      "level": 6
+    },
+    {
+      "name": "guide.css",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        10,
+        38,
+        24
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "aeeb76ffe4e88ce5f114fc2b41ce928307db7c525f5507e70d42876dbd4465d5",
+      "source": "mas/release/payload/components/core/adapters/grok/first-order/guide.css",
+      "level": 6
+    },
+    {
+      "name": "guide.js",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        10,
+        38,
+        26
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "9c12943b7438fb6d2abd1b124ab884f483891d90814805d7a05300ac95754f04",
+      "source": "mas/release/payload/components/core/adapters/grok/first-order/guide.js",
+      "level": 6
+    },
+    {
+      "name": "team.json",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        10,
+        37,
+        20
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "b48750ab5ec21d54ef14ca9fb6de3b26a6757081de8a21c5caa8f49626c6b40c",
+      "source": "mas/release/payload/core/team/team.json",
+      "level": 6
+    },
+    {
+      "name": "materials/01_社区活动半成品.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        10,
+        37,
+        20
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "16be334dab2794fd554c3c5b0b7f11351dc37a6b03a2d714165e50c89d2e4694",
+      "source": "mas/release/payload/components/core/adapters/deepseek/project/一人成阵-DSH/inputs/01_社区活动半成品.md",
+      "level": 6
+    },
+    {
+      "name": "materials/02_收到回执后发给首席.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        10,
+        37,
+        20
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "65e245b639382df5dd37f3b7bc217b7c5175adbc72d56f5e3a35816e0d51e14a",
+      "source": "mas/release/payload/components/core/adapters/deepseek/project/试用者第二步/02_收到回执后发给首席.md",
+      "level": 6
+    }
+  ]
+}

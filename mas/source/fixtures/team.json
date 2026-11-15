@@ -1,0 +1,17 @@
+{
+  "format": "solo-to-team.definition",
+  "version": "1.0.0",
+  "id": "orchard",
+  "name": "Orchard workshop",
+  "roles": [
+    {"id": "lead", "name": "Coordinator", "responsibility": "Assign the task and deliver the reviewed version.", "avatar": null},
+    {"id": "maker", "name": "Producer", "responsibility": "Prepare the requested document.", "avatar": null},
+    {"id": "reviewer", "name": "Reviewer", "responsibility": "Read the actual file and report any defect.", "avatar": null},
+    {"id": "keeper", "name": "Stock keeper", "responsibility": "Check stock records when assigned.", "avatar": null}
+  ],
+  "groups": [
+    {"id": "handoff", "name": "Handoffs", "purpose": "Identify the accepted file.", "members": ["lead", "maker", "keeper"]},
+    {"id": "quality", "name": "Quality", "purpose": "Review the submitted version.", "members": ["reviewer", "keeper"]}
+  ],
+  "workflow": {"dispatch": "lead", "produce": "maker", "review": "reviewer", "deliver": "lead"}
+}

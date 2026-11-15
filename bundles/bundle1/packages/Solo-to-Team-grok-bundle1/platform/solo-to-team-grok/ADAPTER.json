@@ -1,0 +1,61 @@
+{
+  "format": "mas.grok-body-adapter.v1",
+  "candidate_id": "grok-task-materials-design-2-doc-1",
+  "delivery_adapter_version": "adapter.5",
+  "skill_release_version": null,
+  "delivery_status": "pending_integration_candidate_not_formally_accepted",
+  "native_evidence_status": {
+    "current_body_saved_or_invoked": true,
+    "current_revision": "saved_readback_body_and_current_manifest_return_bytes_verified",
+    "historical_candidate_id": "grok-task-materials-design-2",
+    "historical_body_sha256": "5400523ef13676936effcddda5fe23a21f47a676b573c8108a120926f401af52",
+    "historical_bounded_task_and_manual_review": true,
+    "unchanged_reference_files": true,
+    "actual_skill_invocation": "self_report_one_named_call_no_independent_raw_trace",
+    "overall_skill_acceptance": false,
+    "this_builder_performs_native_validation": false,
+    "current_body_sha256": "33ecc365c534c20b65cbe131b89eab814749230f77a30096e80689a86346e8ba",
+    "saved_header_preserved": true,
+    "five_references_readable": "self_report_hashes_match",
+    "scope_field": "not_exposed_unknown; no_explicit_scope_change",
+    "same_bot_new_conversation": "unverified",
+    "payload_manifest_status": "immutable_build_time_snapshot_not_current_acceptance",
+    "evidence_boundary": "Returned bytes verified locally; installed source and native operation origin are reported by test Bot and chief. No new business regression."
+  },
+  "payload_files": {
+    "body.md": {
+      "bytes": 13529,
+      "sha256": "33ecc365c534c20b65cbe131b89eab814749230f77a30096e80689a86346e8ba"
+    },
+    "task-materials/LICENSE": {
+      "bytes": 1075,
+      "sha256": "5d63ea4387f51228fe2f5d313203c401fad2121e2fbf60354234b92dd2559001"
+    },
+    "task-materials/manifest.json": {
+      "bytes": 1357,
+      "sha256": "470fbe393c7d68bad85f61f9c7feafd7c40d186bd545037a576766f8b3eae36a"
+    },
+    "task-materials/references/group-config.md": {
+      "bytes": 14171,
+      "sha256": "10ff9e623070de605e6068cc9fc6a9b6e8deb3eb6e5b5cb2b0ce784418423663"
+    },
+    "task-materials/references/groups.zh.md": {
+      "bytes": 20456,
+      "sha256": "3f5c10e3d1edc6d71596557cf7ee326b7aa8572396f01b2c42ea890820cf9ce5"
+    },
+    "task-materials/references/role-routing.md": {
+      "bytes": 9099,
+      "sha256": "0e6875f8189371aacc941fabf10c932f7081fb9bfb4bc4424629fedbe72b0462"
+    },
+    "task-materials/references/roles.zh.md": {
+      "bytes": 27433,
+      "sha256": "f56a523c0e7438c17771ef34c0f31753e3deeaa60f5dddf0a9e7e6ca7d80134f"
+    }
+  },
+  "rules": {
+    "preserve_payload_bytes": true,
+    "add_yaml_header": false,
+    "includes_private_saved_header": false,
+    "not_an_installer": true
+  }
+}

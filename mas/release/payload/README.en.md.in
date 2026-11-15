@@ -1,0 +1,76 @@
+# Solo to Team
+
+**Internal candidate · No public distribution license has been assigned to the new material.**
+
+[中文](README.md) · [Open the offline portal](index.html#en)
+
+The animated preview below is formatted for GitHub; this showcase is pending publication. To try the controls, download and extract the full package, then open its root index.html in a browser.
+
+## Hand over a draft. Change the brief. Get it back reviewed.
+
+Stay in the lead’s conversation. A producer revises the work, a separate reviewer opens the file, and the lead brings back the same version with the review.
+
+**[Review a handoff](learn/try-review.html#en)** · [Build your team](builder/四端统一建队台.html#en)  
+Offline exercise. No account or model required.
+
+[![Why send back a sheet over one spare kit?](media/demo.en.gif)](media/demo.en.mp4)
+
+[28-second demo](media/demo.en.mp4) · [Animated GIF](media/demo.en.gif)
+
+## Run it on your platform
+
+Choose a host with a working model. Start with the three-role preset.
+
+| Platform | Start here |
+| --- | --- |
+| **Grok Bot** | [Get the first-order pack](core/adapters/grok/first-order.zip) · Extract the pack. Reuse existing seats and add any missing roles from the cards. |
+| **OpenMausBot** | [View department file](core/adapters/openmaus/team.openmaus.json) · In OpenMausBot 0.1.148 choose Templates → Import and select core/adapters/openmaus/team.openmaus.json inside the extracted package. Check for an existing department and inspect permissions. |
+| **WorkBuddy** | [Open setup options](core/adapters/workbuddy/start.html) · Prepare the delivery team in My Experts, select a dedicated workspace and give the lead your draft. |
+| **DeepSeek Harness** | [Get the standard project](core/adapters/deepseek/project.zip) · Extract the standard ZIP. In the workspace picker select 一人成阵-DSH itself; it contains inputs and the hidden .dsh directory. Select /solo-to-team in a new chat. |
+
+Already using DS Bot v0.3.2? In the team builder choose DeepSeek, then DS Bot, to export an offline plan for persistent seats. Review and confirm the actual setup in your existing Main Bot. [Open the team builder](builder/四端统一建队台.html#en)
+
+This plan follows the public DS Bot v0.3.2 source. It has not been tried in a live DS Bot installation; confirm actual results with the receiving account’s Main Bot.
+
+<details>
+<summary>What was tested here?</summary>
+
+**Grok Bot**　An existing team revised after an oversight finding, reviewed R2 and returned it in the lead’s original conversation. Custom setup is guided. Whole-team native import remains unverified.
+
+**OpenMausBot**　The first run used three manually created seats. A custom four-seat file passed the 0.1.148 native data layer in isolated storage. A run through a real user’s account UI remains untested. Importing twice can create another department.
+
+**WorkBuddy**　The bundled 0.1.0 starter ran in a previously configured private trio. The private Mac installer targets WorkBuddy 5.9.3 and has no Apple notarization. Example support email addresses in the original are placeholders.
+
+**DeepSeek Harness**　The sibling directory 试用者第二步 contains the change card. Send it after acknowledgment. For custom exports, extract into a new empty folder and select the directory containing team.definition.json. There are local task artifacts from both the standard and custom four-seat configurations.
+
+Host results come from local observation and retained team artifacts. Platform runtime logs were unavailable. Each host and export has its own evidence. Independent newcomer setup rates have not been measured.
+
+</details>
+
+## Send your first order
+
+1. **Hand over a draft**　Give the lead the 20-person activity brief. Ask it to identify the version it received. [Get the starting brief](core/brief/01-intake.md)
+
+2. **Change the brief**　After the lead acknowledges that version, send the change to 24 people in the same conversation. [Get the change card](core/brief/02-change.md)
+
+3. **Inspect the return**　Open the pack and its review. Match the versions, the change and the actual delivery. Use your checkpoint if you move to another conversation. [Open the resume tool](resume/从这里续办.html#en)
+
+Receipt means the file arrived. Acceptance requires the reviewer to open the matching revision and give a finding. A group shares progress; authority to assign and execute stays with its existing owner.
+
+## How did “round two” become “table two”?
+
+A showcase prepared for GitHub turned a round number in the source sheet into a table number. Follow the two subtitle excerpts, the review and the received file to see how the cross-host handoff corrected it. [Inspect the real handoff](proof/real-handoff/index.html#en)
+
+## Keep going
+
+- [Try a maintenance schedule](core/examples/maintenance/01-intake.md) · A building closes mid-task. See which bookings and draft notices must change.
+
+- [The original four skills](core/skills-original/README.md) · Use them individually or alongside the team.
+
+- [Developer source](source/README.md) · Inspect this candidate’s source and reproduction entry points.
+
+[Who can change the quantity?](proof/authority/index.html#en) Compare the two fictional inputs against the review excerpts from an actual team run.
+
+[Frozen core portal](core/index.html#en) · [Core guide](core/README.en.md) · [Current unified builder](builder/四端统一建队台.html#en). The frozen core includes its earlier builder for historical verification.
+
+Product build `[[MAS:version]]` · [Scope / 使用范围](SCOPE.md)

@@ -1,0 +1,8 @@
+{
+  "kind": "receipt",
+  "actor": "recipient",
+  "artifact_version": "SHOWCASE-R2",
+  "artifact_sha256": "514e73780057c8aaa11cb371f6284f53c29aea7d251c62668d14d22ed284e7a1",
+  "dispatch_sha256": "720ed4b2a5339b53cd6cb463b7a04a9d9c3bf0c41c9d0232d4d177845b71fff7",
+  "result": "received"
+}

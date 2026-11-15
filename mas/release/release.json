@@ -1,0 +1,440 @@
+{
+  "format": 1,
+  "version": "0.2.2-rc.5",
+  "outer_prefix": "Solo-to-Team/",
+  "timestamp": [
+    2026,
+    11,
+    11,
+    0,
+    0,
+    0
+  ],
+  "component_archives": {
+    "core": "f7450a8329beafd65043b5637de5f87e267974bcaab84be4c014b3c2f13148a0",
+    "builder": "2991c397e75b5e960b76dfe441976f72be34e26464d4206fe277a6dff5c12bd3",
+    "resume": "bdc0ea874dc5d5e9727c7148f28705303f05f4c4adfa4092a3908443271ed11f",
+    "source": "612f2e01d318ee92337b1e315fc205ba960ce10cbf676f74b1b5e27b88cf0e65"
+  },
+  "component_trees": {
+    "core": {
+      "file_count": 59,
+      "sha256": "d8873bf3c92fdb4955e662070faf8c5b47986fa63e1f6f085554f9dc0db2b6ac"
+    },
+    "builder": {
+      "file_count": 3,
+      "sha256": "167d386aafa0cb5cd7c69b22b878aeadd1fe5264170e048ac8cf6617a5e70d05"
+    },
+    "resume": {
+      "file_count": 6,
+      "sha256": "451e9911a616eeb7748d61c90fc4246c9e0fc02ddca9748d6f0b24da5092fd77"
+    },
+    "source": {
+      "file_count": 24,
+      "sha256": "ea85029a8bc27e836e47dd15d0bdd8a231eb369d2859a4a920443f100c3c9b3d"
+    }
+  },
+  "original_git_commit": "bc9c19458e9d4afe42e506fc65673a68c26c6a56",
+  "original_git_blobs": {
+    ".agents/plugins/marketplace.json": "dd99202c55ea3014f57cfa4ad3340d4d0fb2c9ad",
+    ".claude-plugin/marketplace.json": "9f36086b21fd35f16c0a785fd042435612491774",
+    ".claude-plugin/plugin.json": "83945ee2c8ae7120d5c23a9b4ee162858934a7ed",
+    ".codex-plugin/plugin.json": "2aeada7f8237b2a0987200960c85040eb9cb351f",
+    "LICENSE": "8c29f4a38eaebc27123608ac882bf7b1ad10f8a3",
+    "NOTICE": "60bda0dce20066ea08c7cdefe95d6842ab206025",
+    "README.en.md": "3dda63cd2b87a8a071f49d9501ba17ea1a7a4824",
+    "README.md": "7e9c9d8dd02aa57db5943f0bbb06da9173a75323",
+    "docs/solo-to-team-value.pdf": "baad9d2624eeab63616e69c5e4d406efe853c97c",
+    "examples/README.md": "572cd1584e575f90039ada437f4d25a1c8393a8c",
+    "examples/walkthrough-meeting-notes/README.en.md": "f03b3149eb415819f5e40e526e1288fe7c6360e6",
+    "examples/walkthrough-meeting-notes/README.md": "f2d6579bce682cc8916d66f9823ef6b06c53af79",
+    "examples/walkthrough-meeting-notes/input.md": "ac2cc94a8aaf37b7a401ab43c7d68af665963931",
+    "examples/walkthrough-meeting-notes/output-missing.md": "47ee8ae45636b023996e2c7f368272a433c3a61a",
+    "examples/walkthrough-meeting-notes/output-ok.md": "80be79aa7bf020994ca58065fcbc05d232f2ecf1",
+    "examples/walkthrough-meeting-notes/register-lines.md": "7b828c41c65741c146558f677db299185ea3381f",
+    "plugin.json": "8b28145a6dae34938892c88718c41bc36775d634",
+    "skills/beginner-ops-writing/SKILL.md": "4f4c1aaf1739fc5d6c79cc74aeef8950c5bf64a8",
+    "skills/dispatch-accept-verify/SKILL.md": "58bce78ae57d72f1016a8e94272b320872ecbee8",
+    "skills/dispatch-accept-verify/templates/登记行模板.md": "51ad43bbc7433a72c022fe20051fcf049ad9341e",
+    "skills/evidence-before-done/SKILL.md": "1ca33243725c686aecc60ca5292c473ac9f92699",
+    "skills/ops-case-notes/SKILL.md": "747cdf4a99f4b321f1f482f92fefc2623e1a9bc4",
+    "templates/task-register-line.md": "8803f3014ed871b5ae40d35648f08c61d93fdc51"
+  },
+  "entries": {
+    "README.en.md": {
+      "template": "mas/release/payload/README.en.md.in"
+    },
+    "README.md": {
+      "template": "mas/release/payload/README.md.in"
+    },
+    "SCOPE.md": {
+      "template": "mas/release/payload/SCOPE.md.in"
+    },
+    "builder/从这里开始.md": {
+      "file": "mas/release/payload/builder/从这里开始.md"
+    },
+    "builder/四席两组示例.team.json": {
+      "file": "mas/release/payload/builder/四席两组示例.team.json"
+    },
+    "builder/四端统一建队台.html": {
+      "generate": "team-builder"
+    },
+    "checksums.json": {
+      "generate": "checksums.json"
+    },
+    "core/README.en.md": {
+      "file": "mas/release/payload/core/README.en.md"
+    },
+    "core/README.md": {
+      "file": "mas/release/payload/core/README.md"
+    },
+    "core/RIGHTS.md": {
+      "file": "mas/release/payload/core/RIGHTS.md"
+    },
+    "core/adapters/deepseek/ds-bot-guide.zip": {
+      "zip": "mas/release/recipes/core--adapters--deepseek--ds-bot-guide.json"
+    },
+    "core/adapters/deepseek/project.zip": {
+      "zip": "mas/release/recipes/core--adapters--deepseek--project.json"
+    },
+    "core/adapters/grok/first-order.zip": {
+      "zip": "mas/release/recipes/core--adapters--grok--first-order.json"
+    },
+    "core/adapters/openmaus/README.md": {
+      "file": "mas/release/payload/core/adapters/openmaus/README.md"
+    },
+    "core/adapters/openmaus/team.openmaus.json": {
+      "template": "mas/release/payload/core/adapters/openmaus/team.openmaus.json.in",
+      "base64": {
+        "[[MAS:asset-1]]": "mas/source/assets/icons/team-lead.png",
+        "[[MAS:asset-2]]": "mas/source/assets/icons/production.png",
+        "[[MAS:asset-3]]": "mas/source/assets/icons/review.png"
+      }
+    },
+    "core/adapters/workbuddy/README.md": {
+      "file": "mas/release/payload/core/adapters/workbuddy/README.md"
+    },
+    "core/adapters/workbuddy/mac-installer.zip": {
+      "zip": "mas/release/recipes/core--adapters--workbuddy--mac-installer.json"
+    },
+    "core/adapters/workbuddy/native.md": {
+      "file": "mas/release/payload/core/adapters/workbuddy/native.md"
+    },
+    "core/adapters/workbuddy/preview.html": {
+      "template": "mas/release/payload/core/adapters/workbuddy/preview.html.in",
+      "base64": {
+        "[[MAS:asset-1]]": "mas/source/assets/icons/team.png"
+      }
+    },
+    "core/adapters/workbuddy/start.html": {
+      "file": "mas/release/payload/core/adapters/workbuddy/start.html"
+    },
+    "core/adapters/workbuddy/team.zip": {
+      "zip": "mas/release/recipes/core--adapters--workbuddy--team.json"
+    },
+    "core/brief/01-intake.md": {
+      "file": "mas/evidence/01-intake.md"
+    },
+    "core/brief/02-change.md": {
+      "file": "mas/evidence/02-change.md"
+    },
+    "core/checksums.json": {
+      "generate": "core/checksums.json"
+    },
+    "core/delivery-check/README.md": {
+      "file": "mas/release/payload/core/delivery-check/README.md"
+    },
+    "core/delivery-check/example.md": {
+      "file": "mas/release/payload/core/delivery-check/example.md"
+    },
+    "core/examples/maintenance/01-intake.md": {
+      "file": "mas/release/payload/core/examples/maintenance/01-intake.md"
+    },
+    "core/examples/maintenance/02-change.md": {
+      "file": "mas/release/payload/core/examples/maintenance/02-change.md"
+    },
+    "core/examples/maintenance/outcome.md": {
+      "file": "mas/release/payload/core/examples/maintenance/outcome.md"
+    },
+    "core/index.html": {
+      "file": "mas/release/payload/core/index.html"
+    },
+    "core/proof/README.md": {
+      "file": "mas/release/payload/core/proof/README.md"
+    },
+    "core/proof/evidence.md": {
+      "file": "mas/release/payload/core/proof/evidence.md"
+    },
+    "core/proof/index.en.html": {
+      "file": "mas/release/payload/core/proof/index.en.html"
+    },
+    "core/proof/index.html": {
+      "file": "mas/release/payload/core/proof/index.html"
+    },
+    "core/skills-original/.agents/plugins/marketplace.json": {
+      "file": ".agents/plugins/marketplace.json"
+    },
+    "core/skills-original/.claude-plugin/marketplace.json": {
+      "file": ".claude-plugin/marketplace.json"
+    },
+    "core/skills-original/.claude-plugin/plugin.json": {
+      "file": ".claude-plugin/plugin.json"
+    },
+    "core/skills-original/.codex-plugin/plugin.json": {
+      "file": ".codex-plugin/plugin.json"
+    },
+    "core/skills-original/LICENSE": {
+      "file": "LICENSE"
+    },
+    "core/skills-original/NOTICE": {
+      "file": "NOTICE"
+    },
+    "core/skills-original/README.en.md": {
+      "file": "mas/release/original-readmes/README.en.md"
+    },
+    "core/skills-original/README.md": {
+      "file": "mas/release/original-readmes/README.md"
+    },
+    "core/skills-original/docs/solo-to-team-value.pdf": {
+      "file": "docs/solo-to-team-value.pdf"
+    },
+    "core/skills-original/examples/README.md": {
+      "file": "examples/README.md"
+    },
+    "core/skills-original/examples/walkthrough-meeting-notes/README.en.md": {
+      "file": "examples/walkthrough-meeting-notes/README.en.md"
+    },
+    "core/skills-original/examples/walkthrough-meeting-notes/README.md": {
+      "file": "examples/walkthrough-meeting-notes/README.md"
+    },
+    "core/skills-original/examples/walkthrough-meeting-notes/input.md": {
+      "file": "examples/walkthrough-meeting-notes/input.md"
+    },
+    "core/skills-original/examples/walkthrough-meeting-notes/output-missing.md": {
+      "file": "examples/walkthrough-meeting-notes/output-missing.md"
+    },
+    "core/skills-original/examples/walkthrough-meeting-notes/output-ok.md": {
+      "file": "examples/walkthrough-meeting-notes/output-ok.md"
+    },
+    "core/skills-original/examples/walkthrough-meeting-notes/register-lines.md": {
+      "file": "examples/walkthrough-meeting-notes/register-lines.md"
+    },
+    "core/skills-original/plugin.json": {
+      "file": "plugin.json"
+    },
+    "core/skills-original/skills/beginner-ops-writing/SKILL.md": {
+      "file": "skills/beginner-ops-writing/SKILL.md"
+    },
+    "core/skills-original/skills/dispatch-accept-verify/SKILL.md": {
+      "file": "skills/dispatch-accept-verify/SKILL.md"
+    },
+    "core/skills-original/skills/dispatch-accept-verify/templates/登记行模板.md": {
+      "file": "skills/dispatch-accept-verify/templates/登记行模板.md"
+    },
+    "core/skills-original/skills/evidence-before-done/SKILL.md": {
+      "file": "skills/evidence-before-done/SKILL.md"
+    },
+    "core/skills-original/skills/ops-case-notes/SKILL.md": {
+      "file": "skills/ops-case-notes/SKILL.md"
+    },
+    "core/skills-original/templates/task-register-line.md": {
+      "file": "templates/task-register-line.md"
+    },
+    "core/team-builder/FORMAT.md": {
+      "file": "mas/release/payload/core/team-builder/FORMAT.md"
+    },
+    "core/team-builder/README.md": {
+      "file": "mas/release/payload/core/team-builder/README.md"
+    },
+    "core/team-builder/adapters.js": {
+      "file": "mas/release/payload/core/team-builder/adapters.js"
+    },
+    "core/team-builder/app.js": {
+      "file": "mas/release/payload/core/team-builder/app.js"
+    },
+    "core/team-builder/builder.css": {
+      "file": "mas/release/payload/core/team-builder/builder.css"
+    },
+    "core/team-builder/core.js": {
+      "file": "mas/release/payload/core/team-builder/core.js"
+    },
+    "core/team-builder/index.html": {
+      "file": "mas/release/payload/core/team-builder/index.html"
+    },
+    "core/team/README.md": {
+      "file": "mas/release/payload/core/team/README.md"
+    },
+    "core/team/team.json": {
+      "file": "mas/release/payload/core/team/team.json"
+    },
+    "downloads/handoff-checker-1.3a.zip": {
+      "zip": "mas/release/recipes/downloads--handoff-checker-1.3a.json"
+    },
+    "index.html": {
+      "template": "mas/release/payload/index.html.in",
+      "base64": {
+        "[[MAS:asset-1]]": "mas/release/payload/artwork/index-1.webp",
+        "[[MAS:asset-2]]": "mas/release/payload/artwork/index-2.webp"
+      }
+    },
+    "learn/try-review.html": {
+      "file": "mas/release/payload/learn/try-review.html"
+    },
+    "media/demo.en-zh.vtt": {
+      "file": "mas/media/solo-to-team-demo.en-zh.vtt"
+    },
+    "media/demo.en.gif": {
+      "file": "mas/media/team-in-action.en.gif"
+    },
+    "media/demo.en.mp4": {
+      "file": "mas/media/solo-to-team-demo.en.mp4"
+    },
+    "media/demo.zh-CN.gif": {
+      "file": "mas/media/team-in-action.zh-CN.gif"
+    },
+    "media/demo.zh-CN.mp4": {
+      "file": "mas/media/solo-to-team-demo.zh-CN.mp4"
+    },
+    "media/demo.zh-CN.vtt": {
+      "file": "mas/media/solo-to-team-demo.zh-CN.vtt"
+    },
+    "proof/authority/README.md": {
+      "file": "mas/release/payload/proof/authority/README.md"
+    },
+    "proof/authority/excerpts.md": {
+      "file": "mas/release/payload/proof/authority/excerpts.md"
+    },
+    "proof/authority/index.html": {
+      "file": "mas/release/payload/proof/authority/index.html"
+    },
+    "proof/authority/inputs/field-notes.md": {
+      "file": "mas/release/payload/proof/authority/inputs/field-notes.md"
+    },
+    "proof/authority/inputs/reviewed-brief.md": {
+      "file": "mas/release/payload/proof/authority/inputs/reviewed-brief.md"
+    },
+    "proof/authority/returned/FIELD-R1_allocation-sheet.md": {
+      "file": "mas/release/payload/proof/authority/returned/FIELD-R1_allocation-sheet.md"
+    },
+    "proof/authority/returned/FIELD-R1_handoff-message.md": {
+      "file": "mas/release/payload/proof/authority/returned/FIELD-R1_handoff-message.md"
+    },
+    "proof/authority/returned/FIELD-R1_review-record.md": {
+      "file": "mas/release/payload/proof/authority/returned/FIELD-R1_review-record.md"
+    },
+    "proof/authority/returned/FIELD-R2_allocation-sheet.md": {
+      "file": "mas/release/payload/proof/authority/returned/FIELD-R2_allocation-sheet.md"
+    },
+    "proof/authority/returned/FIELD-R2_handoff-message.md": {
+      "file": "mas/release/payload/proof/authority/returned/FIELD-R2_handoff-message.md"
+    },
+    "proof/authority/returned/FIELD-R2_review-record.md": {
+      "file": "mas/release/payload/proof/authority/returned/FIELD-R2_review-record.md"
+    },
+    "proof/authority/returned/README.md": {
+      "file": "mas/release/payload/proof/authority/returned/README.md"
+    },
+    "proof/real-handoff/index.html": {
+      "template": "mas/release/payload/proof/real-handoff/index.html.in",
+      "base64": {
+        "[[MAS:asset-1]]": "mas/release/payload/artwork/proof-real-handoff-index-1.png",
+        "[[MAS:asset-2]]": "mas/release/payload/artwork/proof-real-handoff-index-2.png",
+        "[[MAS:asset-3]]": "mas/release/payload/artwork/proof-real-handoff-index-3.png",
+        "[[MAS:asset-4]]": "mas/release/payload/artwork/proof-real-handoff-index-4.png"
+      }
+    },
+    "proof/real-handoff/receipt-excerpt.json": {
+      "file": "mas/release/payload/proof/real-handoff/receipt-excerpt.json"
+    },
+    "resume/README.en.md": {
+      "file": "mas/release/payload/resume/README.en.md"
+    },
+    "resume/checkpoint.json": {
+      "file": "mas/release/payload/resume/checkpoint.json"
+    },
+    "resume/resume-core.js": {
+      "file": "mas/release/payload/resume/resume-core.js"
+    },
+    "resume/resume-i18n.js": {
+      "file": "mas/release/payload/resume/resume-i18n.js"
+    },
+    "resume/从这里续办.html": {
+      "file": "mas/release/payload/resume/从这里续办.html"
+    },
+    "resume/开工与换会话.md": {
+      "file": "mas/release/payload/resume/开工与换会话.md"
+    },
+    "source/README.md": {
+      "file": "mas/source/README.md"
+    },
+    "source/SOURCES.md": {
+      "file": "mas/source/SOURCES.md"
+    },
+    "source/assets/icons/production.png": {
+      "file": "mas/source/assets/icons/production.png"
+    },
+    "source/assets/icons/review.png": {
+      "file": "mas/source/assets/icons/review.png"
+    },
+    "source/assets/icons/team-lead.png": {
+      "file": "mas/source/assets/icons/team-lead.png"
+    },
+    "source/assets/icons/team.png": {
+      "file": "mas/source/assets/icons/team.png"
+    },
+    "source/assets/workbuddy.json": {
+      "file": "mas/source/assets/workbuddy.json"
+    },
+    "source/build.mjs": {
+      "file": "mas/source/build.mjs"
+    },
+    "source/fixtures/team.json": {
+      "file": "mas/source/fixtures/team.json"
+    },
+    "source/smoke.mjs": {
+      "file": "mas/source/smoke.mjs"
+    },
+    "source/web/adapters.js": {
+      "file": "mas/source/web/adapters.js"
+    },
+    "source/web/app.js": {
+      "file": "mas/source/web/app.js"
+    },
+    "source/web/builder.css": {
+      "file": "mas/source/web/builder.css"
+    },
+    "source/web/core.js": {
+      "file": "mas/source/web/core.js"
+    },
+    "source/web/ds-panel.js": {
+      "file": "mas/source/web/ds-panel.js"
+    },
+    "source/web/ds-planner.js": {
+      "file": "mas/source/web/ds-planner.js"
+    },
+    "source/web/ds-runbook.js": {
+      "file": "mas/source/web/ds-runbook.js"
+    },
+    "source/web/grok-plan.js": {
+      "file": "mas/source/web/grok-plan.js"
+    },
+    "source/web/hosts.js": {
+      "file": "mas/source/web/hosts.js"
+    },
+    "source/web/index.html": {
+      "file": "mas/source/web/index.html"
+    },
+    "source/web/rooms.js": {
+      "file": "mas/source/web/rooms.js"
+    },
+    "source/web/template.js.in": {
+      "file": "mas/source/web/template.js.in"
+    },
+    "source/web/workbuddy.js": {
+      "file": "mas/source/web/workbuddy.js"
+    },
+    "source/web/zip-store.js": {
+      "file": "mas/source/web/zip-store.js"
+    }
+  }
+}

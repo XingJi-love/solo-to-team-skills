@@ -1,0 +1,166 @@
+{
+  "format": "mas-zip-layout-v1",
+  "sha256": "4ed6728464474d96bb13940ae9fa8dc83714e8df17a8be1a625bcc0401cfd7c5",
+  "members": [
+    {
+      "name": "一人成阵-DSH/从这里开始.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        34,
+        14
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 25165824,
+      "internal": 0,
+      "sha256": "7bcc4ba33eb879e21bdd86a5214e9af9799cbf93eaa5632e08dc0c984d0b1577",
+      "source": "mas/release/payload/components/core/adapters/deepseek/project/一人成阵-DSH/从这里开始.md",
+      "level": 6
+    },
+    {
+      "name": "一人成阵-DSH/inputs/01_社区活动半成品.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        34,
+        14
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 25165824,
+      "internal": 0,
+      "sha256": "16be334dab2794fd554c3c5b0b7f11351dc37a6b03a2d714165e50c89d2e4694",
+      "source": "mas/release/payload/components/core/adapters/deepseek/project/一人成阵-DSH/inputs/01_社区活动半成品.md",
+      "level": 6
+    },
+    {
+      "name": "一人成阵-DSH/.dsh/skills/solo-to-team/SKILL.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        34,
+        14
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 25165824,
+      "internal": 0,
+      "sha256": "c18a4285344eb841399e8fe6a26800100d57b9f1f917b76f2631b040c4217af7",
+      "source": "mas/release/payload/components/core/adapters/deepseek/project/一人成阵-DSH/.dsh/skills/solo-to-team/SKILL.md",
+      "level": 6
+    },
+    {
+      "name": "一人成阵-DSH/.dsh/skills/solo-to-team/references/首席执行官.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        34,
+        14
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 25165824,
+      "internal": 0,
+      "sha256": "20d6f78ccdca155a1d37f8e201e934a0c639d951c42e4b115e3909add11f4dd7",
+      "source": "mas/release/payload/components/core/adapters/deepseek/project/一人成阵-DSH/.dsh/skills/solo-to-team/references/首席执行官.md",
+      "level": 6
+    },
+    {
+      "name": "一人成阵-DSH/.dsh/skills/solo-to-team/references/生产官.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        34,
+        14
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 25165824,
+      "internal": 0,
+      "sha256": "df71b82878c5e583f201f07dc3066f0311febcb67ddcbf0319f233ff295c3dff",
+      "source": "mas/release/payload/components/core/adapters/deepseek/project/一人成阵-DSH/.dsh/skills/solo-to-team/references/生产官.md",
+      "level": 6
+    },
+    {
+      "name": "一人成阵-DSH/.dsh/skills/solo-to-team/references/审核官.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        34,
+        14
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 25165824,
+      "internal": 0,
+      "sha256": "604cc4694d34a9fb2a28c1d7a33d772e391315ed73118c09951810900f922916",
+      "source": "mas/release/payload/components/core/adapters/deepseek/project/一人成阵-DSH/.dsh/skills/solo-to-team/references/审核官.md",
+      "level": 6
+    },
+    {
+      "name": "试用者第二步/02_收到回执后发给首席.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        34,
+        14
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 25165824,
+      "internal": 0,
+      "sha256": "65e245b639382df5dd37f3b7bc217b7c5175adbc72d56f5e3a35816e0d51e14a",
+      "source": "mas/release/payload/components/core/adapters/deepseek/project/试用者第二步/02_收到回执后发给首席.md",
+      "level": 6
+    },
+    {
+      "name": "START-HERE.en.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        12,
+        0,
+        0
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 25165824,
+      "internal": 0,
+      "sha256": "cd376b7132f891a1effd60d9d869b50786ffe493453c0b725c0a199bb6940137",
+      "source": "mas/release/payload/components/core/adapters/deepseek/project/START-HERE.en.md",
+      "level": 6
+    }
+  ]
+}

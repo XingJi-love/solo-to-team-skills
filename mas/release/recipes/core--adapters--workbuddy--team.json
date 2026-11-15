@@ -1,0 +1,206 @@
+{
+  "format": "mas-zip-layout-v1",
+  "sha256": "5203211d20839fec27a276dd22bb0e99dd5510e99a952815182dd24a7fb905d4",
+  "members": [
+    {
+      "name": "solo-to-team-delivery/.codebuddy-plugin/plugin.json",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        7,
+        53,
+        46
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "21e629d3cf4ceae45e31f5afc415f0e4903d428da6ab1922fc020f074787ada6",
+      "source": "mas/release/payload/components/core/adapters/workbuddy/team/solo-to-team-delivery/.codebuddy-plugin/plugin.json",
+      "level": 6
+    },
+    {
+      "name": "solo-to-team-delivery/README.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        7,
+        52,
+        6
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "1de3bc85f626a14f9155ae005160b4fbfe14f080493e08beda5512165a2905dd",
+      "source": "mas/release/payload/components/core/adapters/workbuddy/team/solo-to-team-delivery/README.md",
+      "level": 6
+    },
+    {
+      "name": "solo-to-team-delivery/agents/producer.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        7,
+        53,
+        46
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "f3304ea91f9f3ab4fb6f7d0c07dbb81d0e0ba93e7493182217ec55f786f2936f",
+      "source": "mas/release/payload/components/core/adapters/workbuddy/team/solo-to-team-delivery/agents/producer.md",
+      "level": 6
+    },
+    {
+      "name": "solo-to-team-delivery/agents/reviewer.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        7,
+        53,
+        46
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "a0523f52f07f08d19b098a46df4f7369e2c3297aa87401d0d36381bb07f084ae",
+      "source": "mas/release/payload/components/core/adapters/workbuddy/team/solo-to-team-delivery/agents/reviewer.md",
+      "level": 6
+    },
+    {
+      "name": "solo-to-team-delivery/agents/solo-to-team-delivery-team-lead.md",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        7,
+        53,
+        46
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "cb000ef01f524a1a6aaeb8a656592a29ccec7dd3a6e87d581cac9f159c3f088a",
+      "source": "mas/release/payload/components/core/adapters/workbuddy/team/solo-to-team-delivery/agents/solo-to-team-delivery-team-lead.md",
+      "level": 6
+    },
+    {
+      "name": "solo-to-team-delivery/avatars/production.png",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        7,
+        49,
+        50
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "f784f80784c394e909751754fa087fb233972f413ea5ef414d2be4fd774dee42",
+      "source": "mas/source/assets/icons/production.png",
+      "level": 6
+    },
+    {
+      "name": "solo-to-team-delivery/avatars/review.png",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        7,
+        49,
+        50
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "a6f94f07efc4b7059596e06756d33af45f7fc8db78954c7445334ec2bd0ac42b",
+      "source": "mas/source/assets/icons/review.png",
+      "level": 6
+    },
+    {
+      "name": "solo-to-team-delivery/avatars/team-lead.png",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        7,
+        49,
+        50
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "65f639a657e1610acb2c7a21c04257bc6943770fbab654ee7c6033582968e2ec",
+      "source": "mas/source/assets/icons/team-lead.png",
+      "level": 6
+    },
+    {
+      "name": "solo-to-team-delivery/avatars/team.png",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        7,
+        49,
+        50
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "9ceb6d41b2ebb6ee57255d2819fd5e346143aec848451eb44b0a630a8c0b581b",
+      "source": "mas/source/assets/icons/team.png",
+      "level": 6
+    },
+    {
+      "name": "solo-to-team-delivery/settings.json",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        7,
+        50,
+        14
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "aab6981bf372aaa622e0879b61e72b911af3b38c1181a13df1dd4df0cfb9f432",
+      "source": "mas/release/payload/components/core/adapters/workbuddy/team/solo-to-team-delivery/settings.json",
+      "level": 6
+    }
+  ]
+}

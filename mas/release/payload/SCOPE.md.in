@@ -1,0 +1,23 @@
+# 版本和范围 / Version and scope
+
+这是《一人成阵》组合包的队内候选。核心首单包使用 RC.4.2 收存字节，统一建队台和可重建源码为 0.2.2b；core 里早期的建队器仅保留旧版核对，日常使用根目录 builder 里的现行版本，续办核验器使用 v1.3。实际组合版本与每项文件指纹见 `checksums.json`。示例使用合成业务；真实产品展示案例中的退修与交回依团队本机观察、云端审核与收件记录。[续办工具单独下载](downloads/handoff-checker-1.3a.zip)供核原始包指纹。只有各项明示的实证属于相应范围。新增内容目前限队内使用。
+
+[原有四项技能和许可](core/skills-original/README.md) · [原技能 LICENSE](core/skills-original/LICENSE) · [NOTICE](core/skills-original/NOTICE) · [源码来源](source/SOURCES.md)
+
+This is a private product review build. The core exercise is RC.4.2; the unified builder and its reproducible source are 0.2.2b. The handoff checker is v1.3. The builder inside the frozen core belongs to RC.4.2. Use the builder in the top-level builder directory for current exports. The demonstration media came from an internally reviewed product presentation. The standalone handoff ZIP is included under downloads for separate sharing and comparison of its original archive hash. The original four skills keep their existing license and notice; a public distribution license has not been assigned to the new material in this build.
+
+
+## 组件与入口 / Components and entry points
+
+| 交付层 / Layer | 版本 / Version | 用途 / Use |
+|---|---|---|
+| [旗舰入口 / Flagship](index.html) | [[MAS:version]] | 本包起点 / Start here |
+| [原核心 / Frozen core](core/index.html) · [中文](core/README.md) · [English](core/README.en.md) | 0.1.0-rc.4.2 | 早期 core/team-builder 留供核对 / Historical builder retained |
+| [统一建队台 / Current builder](builder/四端统一建队台.html) | 0.2.2b | 自配团队用这一份 / Use this for custom teams |
+| [可重建源码 / Source](source/README.md) | 0.2.2b | 重建同版统一台 / Build the same HTML |
+| [续办工具 / Resume](resume/从这里续办.html) · [English](resume/从这里续办.html#en) | 1.3 (doc revision a) | 断点格式为 v1 / Checkpoint format v1 |
+
+
+组件的原 ZIP 指纹见 components；解压后可复算 component_trees。逐文件 SHA-256、两个空格、组件内相对路径和换行，按路径 UTF-8 字节升序拼接后再求 SHA-256。
+
+Upstream archive fingerprints are listed under components. The component_trees values hash UTF-8 lines sorted by relative path bytes, each with file SHA-256, two spaces, the path within its component and LF.

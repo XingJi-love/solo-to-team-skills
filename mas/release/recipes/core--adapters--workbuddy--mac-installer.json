@@ -1,0 +1,148 @@
+{
+  "format": "mas-zip-layout-v1",
+  "sha256": "dcdfd863054abb203266a940c1d947288c3f1f511557e0b781a90ae9ababf7cd",
+  "members": [
+    {
+      "name": "先看这里.html",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        52,
+        48
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "ce010314e4fb0d28497a20a84d27511d0f8629c798afadfcc27ad91c70531a4c",
+      "source": "mas/release/payload/components/core/adapters/workbuddy/mac-installer/先看这里.html",
+      "level": 9
+    },
+    {
+      "name": "一人成阵安装预览.app/Contents/Info.plist",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        47,
+        16
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "75f41668a649b919d2c0a6bb395b6bf4f66943ff0513fc7aeba0e06cd79bc7ed",
+      "source": "mas/release/payload/components/core/adapters/workbuddy/mac-installer/一人成阵安装预览.app/Contents/Info.plist",
+      "level": 9
+    },
+    {
+      "name": "一人成阵安装预览.app/Contents/MacOS/TeamPreview",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        54,
+        6
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2179792896,
+      "internal": 0,
+      "sha256": "9d84c11997997156a89958d8e59d5e97a4fae171ca3693db30f5a64a03c896ae",
+      "source": "mas/release/payload/components/core/adapters/workbuddy/mac-installer/一人成阵安装预览.app/Contents/MacOS/TeamPreview",
+      "level": 9
+    },
+    {
+      "name": "一人成阵安装预览.app/Contents/Resources/Team.icns",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        47,
+        36
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "e98e0ca4b36663c8ef709889faa288efea3715746dab5df08da2c3c49ab50e81",
+      "source": "mas/release/payload/components/core/adapters/workbuddy/mac-installer/一人成阵安装预览.app/Contents/Resources/Team.icns",
+      "level": 9
+    },
+    {
+      "name": "一人成阵安装预览.app/Contents/Resources/install_team.py",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        54,
+        4
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "b8a565b5f465f29e1934542b9edc679ff05b887fa466a383c3789e97c5b1108a",
+      "source": "mas/release/payload/components/core/adapters/workbuddy/mac-installer/一人成阵安装预览.app/Contents/Resources/install_team.py",
+      "level": 9
+    },
+    {
+      "name": "一人成阵安装预览.app/Contents/Resources/solo-to-team-delivery.zip",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        42,
+        56
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "5203211d20839fec27a276dd22bb0e99dd5510e99a952815182dd24a7fb905d4",
+      "archive": {
+        "layout": "mas/release/recipes/core--adapters--workbuddy--team.json"
+      },
+      "level": 9
+    },
+    {
+      "name": "一人成阵安装预览.app/Contents/_CodeSignature/CodeResources",
+      "timestamp": [
+        2026,
+        11,
+        10,
+        9,
+        54,
+        6
+      ],
+      "method": 8,
+      "system": 3,
+      "created": 20,
+      "extract": 20,
+      "external": 2175008768,
+      "internal": 0,
+      "sha256": "7eb607dc6ddb37c76bd8bf80e3777ea960605a9015d64b220e577894f91a6961",
+      "source": "mas/release/payload/components/core/adapters/workbuddy/mac-installer/一人成阵安装预览.app/Contents/_CodeSignature/CodeResources",
+      "level": 9
+    }
+  ]
+}
