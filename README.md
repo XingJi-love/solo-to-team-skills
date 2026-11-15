@@ -6,9 +6,9 @@
 
 [English](README.en.md) · [16页项目介绍与组织图](bundles/bundle1/pdf/一人成队_MAS工程与组织设计_v3_完整包与配置.pdf) · [参与和反馈](CONTRIBUTING.md)
 
-[![观看项目演示](docs/media/solo-to-team-cover.png)](docs/media/solo-to-team-overview-zh-1080p.mp4?raw=true)
+[![观看项目演示](docs/media/solo-to-team-cover.png)](https://github.com/dabingfy-dot/solo-to-team-skills/releases/tag/v0.2.0#video)
 
-[播放完整演示 · 中文 · 1080p · 9.38 MB](docs/media/solo-to-team-overview-zh-1080p.mp4?raw=true)。演示说明产品方法，不代表四端业务全部通过。
+[播放完整演示 · 中文 · 1080p · 9.38 MB](https://github.com/dabingfy-dot/solo-to-team-skills/releases/tag/v0.2.0#video)。演示说明产品方法，不代表四端业务全部通过。
 
 ## 选你正在使用的平台
 

@@ -6,9 +6,9 @@ Solo to Team is a human-led multi-agent system (MAS) toolkit for existing AI pla
 
 [中文](README.md) · [Illustrated project guide, 16 pages, Chinese](bundles/bundle1/pdf/一人成队_MAS工程与组织设计_v3_完整包与配置.pdf) · [Contributing and feedback](CONTRIBUTING.md)
 
-[![Watch the project overview](docs/media/solo-to-team-cover.png)](docs/media/solo-to-team-overview-zh-1080p.mp4?raw=true)
+[![Watch the project overview](docs/media/solo-to-team-cover.png)](https://github.com/dabingfy-dot/solo-to-team-skills/releases/tag/v0.2.0#video)
 
-[Watch the full overview · Chinese · 1080p · 9.38 MB](docs/media/solo-to-team-overview-zh-1080p.mp4?raw=true). It illustrates the method; it is not proof that every platform passed business testing.
+[Watch the full overview · Chinese · 1080p · 9.38 MB](https://github.com/dabingfy-dot/solo-to-team-skills/releases/tag/v0.2.0#video). It illustrates the method; it is not proof that every platform passed business testing.
 
 ## Choose your platform
 
